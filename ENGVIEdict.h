@@ -1,5 +1,5 @@
-#ifndef TUDIEN_H
-#define TUDIEN_H
+#ifndef ENGVIEDICT_H
+#define ENGVIEDICT_H
 // Cau truc du lieu cho tu dien
 typedef struct Node {
     char word[100];       // Tu tieng Anh 
