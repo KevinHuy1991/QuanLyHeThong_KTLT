@@ -20,5 +20,8 @@ void loadDictionaryFromFile(Node** head, const char* filename);
 void saveDictionaryToFile(Node* head, const char* filename);
 // Ham xoa ky tu xuong dong (newline) tu chuoi
 void removeNewline(char* str);
-
+// Xoa tu trong tu dien
+void removeWord(Node** head, char* english);
+// Cap nhat nghia cua tu trong tu dien
+void updateMeaning(Node* head, char* english, char* newMeaning);
 #endif

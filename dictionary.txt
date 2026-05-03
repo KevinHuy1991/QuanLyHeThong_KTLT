@@ -1,0 +1,499 @@
+Family|Gia dinh
+Parents|Bo me
+Father|Bo, cha
+Mother|Me
+Son|Con trai
+Daughter|Con gai
+Brother|Anh, em trai
+Sister|Chi, em gai
+Sibling|Anh chi em ruot
+Grandparents|Ong ba
+Grandfather|Ong
+Grandmother|Ba
+Grandson|Chau trai (noi/ngoai)
+Granddaughter|Chau gai (noi/ngoai)
+Uncle|Chu, bac, cau
+Aunt|Co, di
+Nephew|Chau trai
+Niece|Chau gai
+Cousin|Anh/chi/em ho
+Husband|Chong
+Wife|Vo
+In-laws|Gia dinh ben chong/vo
+Father-in-law|Bo chong/bo vo
+Mother-in-law|Me chong/me vo
+Brother-in-law|Anh/em re
+Sister-in-law|Chi/em dau
+Stepfather|Bo duong
+Stepmother|Me ke
+Stepson|Con trai rieng cua vo/chong
+Stepdaughter|Con gai rieng cua vo/chong
+Weather|Thoi tiet
+Climate|Khi hau
+Temperature|Nhiet do
+Forecast|Du bao thoi tiet
+Season|Mua
+Spring|Mua xuan
+Summer|Mua he
+Autumn|Mua thu
+Winter|Mua dong
+SunSun|Mat troi
+Sunshine|Anh nang
+Sunny|Nang, troi nang
+Cloud|Dam may
+Cloudy|Nhieu may
+Rain|Mua
+Rainy|Co mua
+Shower|Mua rao
+Drizzle|Mua phun
+Downpour|Mua lon, mua nhu trut
+Thunderstorm|Giong bao
+Lightning|Tia chop
+Thunder|Sam
+Snow|Tuyet
+Snowy|Co tuyet
+Blizzard|Bao tuyet
+Hail|Mua da
+Fog|Suong mu
+Foggy|Nhieu suong mu
+Mist|Suong mu nhe
+Wind|Gio
+Windy|Co gio
+Storm|Bao
+Stormy|Co bao
+Hurricane|Bao lon (o Dai Tay Duong)
+Typhoon|Bao nhiet doi (o Thai Binh Duong)
+Tornado|Loc xoay
+Drought|Han han
+Humidity|Do am
+Humid|Am uot
+Heatwave|Dot nang nong
+Freezing|Ret buot
+Chilly|Lanh
+Warm|Am ap
+Cold|Lanh
+Breezy|Co gio nhe
+Overcast|U am, am u
+Job|Cong viec, nghe nghiep
+Occupation|Nghe nghiep
+Career|Su nghiep
+Work|Cong viec
+Employee|Nhan vien
+Employer|Nha tuyen dung
+Boss|Sep, ong chu
+Manager|Quan ly
+Director|Giam doc
+CEO|Tong giam doc
+Assistant|Tro ly
+Accountant|Ke toan
+Secretary|Thu ky
+Engineer|Ky su
+Architect|Kien truc su
+Doctor|Bac si
+Nurse|Y ta
+Pharmacist|Duoc si
+Dentist|Nha si
+Surgeon|Bac si phau thuat
+Teacher|Giao vien
+Professor|Giao su
+Lawyer|Luat su
+Judge|Tham phan
+Police officer|Canh sat
+Firefighter|Linh cuu hoa
+Soldier|Linh, quan nhan
+Pilot|Phi cong
+Flight attendant|Tiep vien hang khong
+Driver|Tai xe
+Chef|Dau bep
+Waiter|Boi ban nam
+Waitress|Boi ban nu
+Baker|Tho lam banh
+Barber|Tho cat toc nam
+Hairdresser|Tho lam toc nu
+Mechanic|Tho sua may
+Electrician|Tho dien
+Plumber|Tho sua ong nuoc
+Carpenter|Tho moc
+Scientist|Nha khoa hoc
+Researcher|Nha nghien cuu
+Journalist|Nha bao
+Photographer|Nhiep anh gia
+Writer|Nha van
+Artist|Hoa si, nghe si
+Musician|Nhac si
+Actor|Nam dien vien
+Actress|Nu dien vien
+Model|Nguoi mau
+Designer|Nha thiet ke
+Entrepreneur|Doanh nhan
+Businessman|Nam doanh nhan
+Businesswomanz|Nu doanh nhan
+Banker|Nhan vien ngan hang
+Real estate agent|Nhan vien moi gioi bat dong san
+Consultant|Co van
+Programmer|Lap trinh vien
+IT specialist|Chuyen gia CNTT
+Freelancer|Nguoi lam viec tu do
+Clothes|Quan ao
+Outfit|Trang phuc
+Clothing|Quan ao (noi chung)
+Garment|Trang phuc, ao quan
+Uniform|Dong phuc
+Casual wear|Trang phuc thuong ngay
+Formal wear|Trang phuc trang trong
+Suit|Bo vest
+Tuxedo|Bo le phuc nam
+Shirt|Ao so mi
+T-shirt|Ao thun
+Polo shirt|Ao polo
+Blouse|Ao so mi nu
+Tank top|Ao ba lo
+Sweater|Ao co mu trum
+Jacket|Ao khoac ngan
+Coat|Ao khoac dai
+Raincoat|Ao mua
+Jeans|Quan bo
+Trousers|Quan dai
+Pants|Quan (Anh-My)
+Shorts|Quan dui
+Leggings|Quan legging
+Skirt|Chan vay
+Dress|Vay lien
+Gown|Vay da hoi
+Pajamas|Do ngu
+Bathrobe|Ao choang tam
+Underwear|Do lot
+Bra|Ao nguc
+Panties|Quan lot nu
+Briefs|Quan lot nam
+Socks|Tat, vo
+Stockings|Tat dai
+Shoes|Giay
+Sneakers|Giay the thao
+Sandals|Dep xang dan
+Flip-flops|Dep tong
+Boots|Ung, bot
+High heels|Giay cao got
+Hat|Mu rong vanh
+Cap|Mu luoi trai
+Scarf|Khan quang co
+Gloves|Gang tay
+Belt|That lung
+Tie|Ca vat
+Bow tie|No deo co nam
+Sunglasses|Kinh ram
+Kind|Tot bung, tu te
+Friendly|Than thien
+Generous|Hao phong
+Honest|Trung thuc
+Hardworking|Cham chi
+Patient|Kien nhan
+Polite|Lich su
+Humble|Khiem ton
+Confident|Tu tin
+Optimistic|Lac quan
+Brave|Dung cam
+Responsible|Co trach nhiem
+Creative|Sang tao
+Reliable|Dang tin cay
+Rude|Tho lo, bat lich su
+Selfish|Ich ky
+Lazy|Luoi bieng
+Arrogant|Kieu ngao
+Stubborn|Cung dau, buong binh
+Pessimistic|Bi quan
+Impatient|Nong nay, thieu kien nhan
+Jealous|Ghen ti
+Moody|Tinh khi that thuong
+Aggressive|Hung hang
+Nervous|Lo lang, bon chon
+Vegetable|Rau cu
+Carrot|Ca rot
+Potato|Khoai tay
+Sweet potato|Khoai lang
+Tomato|Ca chua
+Onion|Hanh tay
+Garlic|Toi
+Cucumber|Dua chuot
+Cabbage|Bap cai
+Lettuce|Rau xa lach
+Spinach|Rau chan vit
+Broccoli|Bong cai xanh
+Cauliflower|Sup lo trang
+Bell pepper|Ot chuong
+Chili|Ot cay
+Pumpkin|Bi ngo
+Zucchini|Bi xanh
+Corn|Ngo, bap
+Pea|Dau Ha Lan
+Bean|Dau
+Eggplant|Ca tim
+Radish|Cu cai do
+Beetroot|Cu den
+Mushroom|Nam
+Asparagus|Mang tay
+Celery|Can tay
+Ginger|Gung
+Environment|Moi truong
+Nature|Thien nhien
+Ecosystem|He sinh thai
+Climate|Khi hau
+Pollution|O nhiem
+Air pollution|O nhiem khong khi
+Water pollution|O nhiem nuoc
+Soil pollution|O nhiem dat
+Global warming|Su nong len toan cau
+Greenhouse effect|Hieu ung nha kinh
+Deforestation|Nan pha rung
+Renewable energy|Nang luong tai tao
+Solar energy|Nang luong mat troi
+Wind power|Nang luong gio
+Fossil fuel|Nhien lieu hoa thach
+Carbon footprint|Dau chan carbon
+Biodiversity|Da dang sinh hoc
+Endangered species|Cac loai co nguy co tuyet chung
+Conservation|Su bao ton
+Recycling|Tai che
+Waste|Rac thai
+Plastic waste|Rac thai nhua
+Sustainable|Ben vung
+Habitat|Moi truong song
+Natural disaster|Tham hoa thien nhien
+Flood|Lu lut
+Drought|Han han
+Earthquake|Dong dat
+Wildfire|Chay rung
+Animal|Dong vat
+Pet|Thu cung
+Dog|Cho
+Cat|Meo
+Rabbit|Tho
+Hamster|Chuot hamster
+Mouse|Chuot
+Rat|Chuot cong
+Cow|Bo
+Buffalo|Trau
+Pig|Lon
+Sheep|Cuu
+Goat|De
+Horse|Ngua
+Chicken|Ga
+Duck|Vit
+Goose|Ngong
+Monkey|Khi
+Elephant|Voi
+Tiger|Ho
+Lion|Su tu
+Bear|Gau
+Giraffe|Huou cao co
+Zebra|Ngua van
+Wolf|Soi
+Fox|Cao
+Dolphin|Ca heo
+Shark|Ca map
+Whale|Ca voi
+Snake|Ran
+Turtle|Rua
+Food|Thuc an
+Meal|Bua an
+Dish|Mon an
+Cuisine|Am thuc
+Ingredient|Nguyen lieu
+Breakfast|Bua sang
+Lunch|Bua trua
+Dinner|Bua toi
+Snack|Do an nhe
+Appetizer|Mon khai vi
+Main course|Mon chinh
+Dessert|Mon trang mieng
+Rice|Com, gao
+Noodles|Mi, bun, pho
+Bread|Banh mi
+Soup|Sup, canh
+Salad|Salad, rau tron
+Meat|Thit
+Beef|Thit bo
+Pork|Thit heo
+Chicken|Thit ga
+Seafood|Hai san
+Fish|Ca
+Egg|Trung
+Vegetable|Rau cu
+Fruit|Trai cay
+Spicy|Cay
+Sweet|Ngot
+Sour|Chua
+Bitter|Dang
+Salty|Man
+Delicious|Ngon
+School|Truong hoc
+Classroom|Lop hoc
+Teacher|Giao vien
+Student|Hoc sinh
+Principal|Hieu truong
+Subject|Mon hoc
+Lesson|Bai hoc
+Homework|Bai tap ve nha
+Exam|Ky thi
+Test|Bai kiem tra
+Score|Diem so
+Grade|Lop, diem so
+Diploma|Bang tot nghiep
+Library|Thu vien
+Laboratory|Phong thi nghiem
+Playground|San choi
+Desk|Ban hoc
+Chair|Ghe
+Blackboard|Bang den
+Whiteboard|Bang trang
+Pen|But muc
+Pencil|But chi
+Notebook|Vo, so ghi chep
+Backpack|Ba lo
+Uniform|Dong phuc
+Recess|Gio giai lao
+Scholarship|Hoc bong
+Attendance|Su chuyen can
+Travel|Du lich, di du lich
+Trip|Chuyen di
+Journey|Hanh trinh
+Vacation|Ky nghi
+Tourist|Khach du lich
+Destination|Diem den
+Itinerary|Lich trinh
+Sightseeing|Tham quan
+Landmark|Danh lam thang canh
+Adventure|Cuoc phieu luu
+Tourist attraction|Diem thu hut du lich
+Passport|Ho chieu
+Visa|Thi thuc
+Ticket|Ve
+Boarding pass|The len may bay
+Airport|San bay
+Flight|Chuyen bay
+Departure|Su khoi hanh
+Arrival|Su den noi
+Hotel|Khach san
+Hostel|Nha tro
+Resort|Khu nghi duong
+Luggage|Hanh ly
+Baggage claim|Khu nhan hanh ly
+Map|Ban do
+Guidebook|Sach huong dan
+Souvenir|Luu niem
+Currency|Tien te
+Budget|Ngan sach
+Color|Mau sac
+Red|Mau do
+Blue|Mau xanh duong
+Green|Mau xanh la cay
+Yellow|Mau vang
+Orange|Mau cam
+Purple|Mau tim
+Pink|Mau hong
+Brown|Mau nau
+Black|Mau den
+White|Mau trang
+Gray|Mau xam
+Silver|Mau bac
+Gold|Vang
+Beige|Mau be
+Cyan|Mau xanh lo
+Magenta|Mau do tuoi
+Turquoise|Mau xanh ngoc
+Lavender|Mau tim nhat
+Maroon|Mau do nau
+Teal|Mau xanh mong ket
+Navy|Mau xanh nuoc bien dam
+Olive|Mau xanh o liu
+Coral|Mau san ho
+Peach|Mau dao
+Traffic|Giao thong
+Vehicle|Phuong tien giao thong
+Road|Con duong
+Street|Duong pho
+Highway|Duong cao toc
+Intersection|Nga tu, giao lo
+Roundabout|Bung binh
+Traffic light|Den giao thong
+Pedestrian|Nguoi di bo
+Sidewalk|Via he (Anh-My)
+Pavement|Via he (Anh-Anh)
+Crosswalk|Vach sang duong
+Bridge|Cay cau
+Tunnel|Duong ham
+Car|Xe o to
+Bus|Xe buyt
+Taxi|Xe taxi
+Train|Tau hoa
+Subway|Tau dien ngam (Anh-My)
+Underground|Tau dien ngam (Anh-Anh)
+Airplane|May bay
+Bicycle|Xe dap
+Motorcycle|Xe may
+Ferry|Pha
+Boat|Thuyen
+Traffic jam|Tac duong
+Speed limit|Gioi han toc do
+Parking lot|Bai do xe
+Seatbelt|Day an toan
+Happy|Hanh phuc, vui ve
+Joyful|Vui suong
+Excited|Hao hung
+Cheerful|Vui ve, tuoi tan
+Proud|Tu hao
+Grateful|Biet on
+Hopeful|Hy vong
+Relaxed|Thu gian
+Satisfied|Hai long
+Affectionate|Triu men, yeu thuong
+Loving|Day yeu thuong
+Fearful|So hai
+Anxious|Lo lang, bat an
+Embarrassed|Xau ho, nguong ngung
+Guilty|Cam thay co loi
+Lonely|Co don
+Frustrated|Buc boi, nan long
+Disappointed|That vong
+Shocked|Soc, kinh ngac
+Depressed|Chan nan, tram cam
+Confused|Boi roi
+Shy|Nhut nhat, e then
+Envious|Do ky
+Tired|Met moi
+Annoyed|Kho chiu, buc minh
+Fruit|Trai cay, hoa qua
+Apple|Tao
+Orange|Cam
+Banana|Chuoi
+Mango|Xoai
+Grape|Nho
+Pineapple|Dua, thom
+Watermelon|Dua hau
+Strawberry|Dau tay
+Blueberry|Viet quat
+Raspberry|Mam xoi
+Lemon|Chanh vang
+Lime|Chanh xanh
+Peach|Dao
+Plum|Man
+Recommend|De xuat
+Describe|Mo ta
+Explain|Giai thich
+Muscle|Co bap
+Bone|Xuong
+Heart|Trai tim
+Brain|Nao bo
+Stomach|Da day
+Health|Suc khoe
+Medicine|Thuoc
+Symptom|Trieu chung
+Disease|Benh tat
+Infection|Nhiem trung
+Treatment|Dieu tri
+Recovery|Hoi phuc
+Insurance|Bao hiem
+Emergency|Khan cap
+Surgery|Phau thuat
+Exercise|Tap the duc
+Nutrition|Dinh duong

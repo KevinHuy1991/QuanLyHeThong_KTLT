@@ -49,6 +49,42 @@ void wordSearch(Node* head, char* english) {
     printf("=> Khong tim thay tu '%s' trong tu dien.\n", english);
 }
 
+// Xoa tu trong tu dien
+void removeWord(Node** head, char* english) {
+    Node* temp = *head;
+    Node* prev = NULL;
+
+    while (temp != NULL) {
+        if (strcasecmp(temp->word, english) == 0) {
+            if (prev == NULL) {
+                *head = temp->next; // Xoa node dau
+            } else {
+                prev->next = temp->next; // Xoa node giua hoac cuoi
+            }
+            free(temp);
+            printf("=> Da xoa tu '%s' khoi tu dien.\n", english);
+            return;
+        }
+        prev = temp;
+        temp = temp->next;
+    }
+    printf("=> Khong tim thay tu '%s' de xoa.\n", english);
+}
+
+// Cap nhat nghia cua tu trong tu dien
+void updateMeaning(Node* head, char* english, char* newMeaning) {
+    Node* temp = head;
+    while (temp != NULL) {
+        if (strcasecmp(temp->word, english) == 0) {
+            strcpy(temp->meaning, newMeaning);
+            printf("=> Da cap nhat nghia cua tu '%s' thanh '%s'.\n", english, newMeaning);
+            return;
+        }
+        temp = temp->next;
+    }
+    printf("=> Khong tim thay tu '%s' de cap nhat.\n", english);
+}
+
 // doc du lieu tu File
 void loadDictionaryFromFile(Node** head, const char* filename) {
     FILE* f = fopen(filename, "r");

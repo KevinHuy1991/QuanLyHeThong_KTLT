@@ -14,6 +14,8 @@ Dự án được thực hiện bởi nhóm 4 thành viên, chia thành 2 nhóm 
     *   Viết hàm `removeNewline`: Chuẩn hóa chuỗi nhập từ bàn phím.
     *   Viết hàm `dictionaryPrinting`: Xuất toàn bộ từ điển ra màn hình[cite: 1].
     *   Viết hàm `wordSearch`: Tìm kiếm từ vựng (không phân biệt hoa thường)[cite: 1].
+    *   Viết hàm `removeWord`: Xóa từ vựng.[cite 1]
+    *   Viết hàm `updateMeaning`: Cập nhật lại nghĩa của từ vựng.[cite 1]
 *   **Lê Cường Bảo:**
     *   Viết hàm `addWord`: Thêm một từ vựng mới vào danh sách liên kết[cite: 1].
     *   Viết hàm `loadDictionaryFromFile`: Nạp dữ liệu từ file vào chương trình khi khởi động[cite: 1].
