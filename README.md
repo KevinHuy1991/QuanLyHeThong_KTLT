@@ -1,10 +1,10 @@
-# 📘 BÀI TẬP LỚN : HỆ THỐNG QUẢN LÝ TỪ ĐIỂN ANH - VIỆT (C)
+# BÀI TẬP LỚN : HỆ THỐNG QUẢN LÝ TỪ ĐIỂN ANH - VIỆT (C)
 
 Ứng dụng quản lý từ điển Anh - Việt sử dụng cấu trúc dữ liệu **Danh sách liên kết đơn (Linked List)** để lưu trữ và xử lý dữ liệu vựng trực tiếp trên RAM, hỗ trợ lưu trữ bền vững qua tệp tin văn bản[cite: 1, 2, 3].
 
 ---
 
-## 👥 PHÂN CÔNG NHIỆM VỤ
+## PHÂN CÔNG NHIỆM VỤ
 
 Dự án được thực hiện bởi nhóm 4 thành viên, chia thành 2 nhóm chuyên trách để phối hợp làm việc trên GitHub:
 
@@ -31,7 +31,7 @@ Dự án được thực hiện bởi nhóm 4 thành viên, chia thành 2 nhóm 
 
 ---
 
-## 📖 HƯỚNG DẪN SỬ DỤNG
+## HƯỚNG DẪN SỬ DỤNG
 
 ### **1. Cấu trúc mã nguồn**
 *   `ENGVIEdict.h`: Chứa khai báo cấu trúc và các nguyên mẫu hàm[cite: 2].
