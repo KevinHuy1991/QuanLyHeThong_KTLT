@@ -101,6 +101,39 @@ void wordSearch(Node* head, char* english) {
     setColor(7);
 }
 
+// Ham tim tat ca cac tu bat dau bang mot chu cai cu the
+void searchByFirstChar(Node* head, char ch) {
+    Node* temp = head;
+    int found = 0;
+    
+    // Chuyen ve chu thuong de so sanh
+    char searchChar = tolower(ch);
+
+    clearScreen();
+    boxHeader("KET QUA TIM KIEM");
+    
+    printf("\tCac tu bat dau bang chu cai '%c':\n", ch);
+    printf("\t--------------------------------------------------\n");
+    setColor(10);
+    printf("\t%-20s | %-20s\n", "TU TIENG ANH", "NGHIA TIENG VIET");
+    setColor(7);
+
+    while (temp != NULL) {
+        if (tolower(temp->word[0]) == searchChar) {
+            printf("\t%-20s | %-20s\n", temp->word, temp->meaning);
+            found = 1;
+        }
+        temp = temp->next;
+    }
+
+    if (!found) {
+        setColor(12);
+        printf("\t=> Khong co tu nao bat dau bang '%c'.\n", ch);
+        setColor(7);
+    }
+    printf("\t--------------------------------------------------\n");
+}
+
 // Xoa tu trong tu dien
 void removeWord(Node** head, char* english) {
     Node* temp = *head;
@@ -125,6 +158,41 @@ void removeWord(Node** head, char* english) {
     setColor(12);
     printf("\t=> Khong tim thay tu '%s' de xoa.\n", english);
     setColor(7);
+}
+
+// Ham sap xep danh sach lien ket theo thu tu A-Z (Bubble Sort)
+void sortDictionary(Node** head) {
+    if (*head == NULL || (*head)->next == NULL) return;
+
+    int swapped;
+    Node* ptr1;
+    Node* lptr = NULL;
+
+    do {
+        swapped = 0;
+        ptr1 = *head;
+
+        while (ptr1->next != lptr) {
+            // So sanh khong phan biet hoa thuong
+            if (strcasecmp(ptr1->word, ptr1->next->word) > 0) {
+                // Hoan doi du lieu giua 2 node
+                char tempWord[100];
+                char tempMeaning[200];
+
+                strcpy(tempWord, ptr1->word);
+                strcpy(ptr1->word, ptr1->next->word);
+                strcpy(ptr1->next->word, tempWord);
+
+                strcpy(tempMeaning, ptr1->meaning);
+                strcpy(ptr1->meaning, ptr1->next->meaning);
+                strcpy(ptr1->next->meaning, tempMeaning);
+
+                swapped = 1;
+            }
+            ptr1 = ptr1->next;
+        }
+        lptr = ptr1;
+    } while (swapped);
 }
 
 // Cap nhat nghia cua tu trong tu dien

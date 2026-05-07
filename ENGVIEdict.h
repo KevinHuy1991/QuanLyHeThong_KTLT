@@ -35,5 +35,9 @@ void removeNewline(char* str);
 void removeWord(Node** head, char* english);
 // Cap nhat nghia cua tu trong tu dien[cite: 2]
 void updateMeaning(Node* head, char* english, char* newMeaning);
+// Ham tim tat ca cac tu bat dau bang mot chu cai cu the[cite: 2]
+void searchByFirstChar(Node* head, char ch);
+// Ham sap xep tu dien theo thu tu abc[cite: 2]
+void sortDictionary(Node** head);
 
 #endif

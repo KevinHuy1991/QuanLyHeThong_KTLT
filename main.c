@@ -11,6 +11,7 @@ int main() {
     const char* filename = "dictionary.txt";
 
     loadDictionaryFromFile(&dictionary, filename);
+    sortDictionary(&dictionary);
 
     clearScreen();
     setColor(11);
@@ -27,10 +28,11 @@ int main() {
         setColor(14); printf("\t3. "); setColor(7); printf("In toan bo tu dien\n");
         setColor(14); printf("\t4. "); setColor(7); printf("Thay doi nghia cua tu\n");
         setColor(14); printf("\t5. "); setColor(7); printf("Xoa tu khoi he thong\n");
+        setColor(14); printf("\t6. "); setColor(7); printf("Liet ke tu theo chu cai dau\n");
         setColor(12); printf("\t0. "); setColor(7); printf("Luu du lieu va Thoat\n");
         
         printf("\t-------------------------------\n");
-        printf("\tLua chon cua ban(0-5): ");
+        printf("\tLua chon cua ban(0-6): ");
         if (scanf("%d", &choice) != 1) {
             choice = -1;
             while(getchar() != '\n');
@@ -55,6 +57,7 @@ int main() {
                 fgets(vietnamese, sizeof(vietnamese), stdin);
                 removeNewline(vietnamese);
                 addWord(&dictionary, english, vietnamese);
+                sortDictionary(&dictionary);
                 setColor(10); printf("\t=> Da them tu moi thanh cong!\n");
                 setColor(7); 
                 printf("\n\tBam phim bat ky de quay lai menu...");
@@ -88,6 +91,15 @@ int main() {
                 getch(); 
                 break;
 
+            case 6:
+                printf("\tNhap chu cai dau: ");
+                char ch;
+                scanf("%c", &ch);
+                searchByFirstChar(dictionary, ch);
+                printf("\n\tBam phim bat ky de quay lai menu...");
+                getch(); 
+                break;
+                
             case 0: 
                 setColor(11);
                 slowPrint("\n\tDang luu file... \n", 30);
@@ -101,7 +113,7 @@ int main() {
         }
     } while (choice != 0);
 
-    saveDictionaryToFile(dictionary, filename); // lu l?i khi thot
+    saveDictionaryToFile(dictionary, filename); 
     freeMemory(&dictionary);
 
     return 0;
