@@ -5,10 +5,13 @@
 #include "ENGVIEdict.h"
 
 int main() {
+    SetConsoleOutputCP(437);
     Node* dictionary = NULL;
+    HistoryNode* history = NULL;
     int choice;
     char english[100], vietnamese[200];
     const char* filename = "dictionary.txt";
+    const char* historyFile = "history.txt";
 
     loadDictionaryFromFile(&dictionary, filename);
     sortDictionary(&dictionary);
@@ -29,10 +32,12 @@ int main() {
         setColor(14); printf("\t4. "); setColor(7); printf("Thay doi nghia cua tu\n");
         setColor(14); printf("\t5. "); setColor(7); printf("Xoa tu khoi he thong\n");
         setColor(14); printf("\t6. "); setColor(7); printf("Liet ke tu theo chu cai dau\n");
+        setColor(14); printf("\t7. "); setColor(7); printf("Xem lich su tra cuu\n");
+        setColor(14); printf("\t8. "); setColor(7); printf("On tap tu vung (Mini Game)\n");
         setColor(12); printf("\t0. "); setColor(7); printf("Luu du lieu va Thoat\n");
         
         printf("\t-------------------------------\n");
-        printf("\tLua chon cua ban(0-6): ");
+        printf("\tLua chon cua ban(0-8): ");
         if (scanf("%d", &choice) != 1) {
             choice = -1;
             while(getchar() != '\n');
@@ -40,13 +45,35 @@ int main() {
         getchar(); 
 
         switch (choice) {
-            case 1: 
+            case 1:
                 printf("\tNhap tu tieng Anh can tim: ");
                 fgets(english, sizeof(english), stdin);
                 removeNewline(english);
-                wordSearch(dictionary, english);
+
+                advancedWordSearch(dictionary, english);
+
+                {
+                    Node* found = dictionary;
+                    int isFound = 0; // Cờ kiểm tra
+                    char histResult[200];
+                    
+                    while (found != NULL) {
+                        if (strcasecmp(found->word, english) == 0) {
+                            strncpy(histResult, found->meaning, sizeof(histResult) - 1);
+                            isFound = 1; // Đánh dấu là đã tìm thấy
+                            break;
+                        }
+                        found = found->next;
+                    }
+                    
+                    // CHỈ GỌI HÀM LƯU VÀO LỊCH SỬ KHI TÌM THẤY TỪ
+                    if (isFound) {
+                        saveSearchHistory(english, histResult, historyFile);
+                    }
+                }
+
                 printf("\n\tBam phim bat ky de quay lai menu...");
-                getch(); // Dung man hinh doi nguoi dung bam phim 
+                getch();
                 break;
 
             case 2: 
@@ -86,7 +113,13 @@ int main() {
                 printf("\tNhap tu tieng Anh can xoa: ");
                 fgets(english, sizeof(english), stdin);
                 removeNewline(english);
+                
+                // Xóa từ khỏi bộ nhớ (Linked List)
                 removeWord(&dictionary, english);
+                
+                // GỌI HÀM DỌN DẸP LỊCH SỬ NGAY SAU KHI XÓA TỪ
+                cleanHistory(historyFile, dictionary); 
+                
                 printf("\n\tBam phim bat ky de quay lai menu...");
                 getch(); 
                 break;
@@ -99,7 +132,15 @@ int main() {
                 printf("\n\tBam phim bat ky de quay lai menu...");
                 getch(); 
                 break;
-                
+            
+            case 7:
+                printHistory(historyFile, dictionary); 
+                break;
+            
+            case 8:
+                randomQuizFromHistory(historyFile);
+                break;
+            
             case 0: 
                 setColor(11);
                 slowPrint("\n\tDang luu file... \n", 30);
@@ -114,6 +155,7 @@ int main() {
     } while (choice != 0);
 
     saveDictionaryToFile(dictionary, filename); 
+    cleanHistory("history.txt", dictionary);
     freeMemory(&dictionary);
 
     return 0;
