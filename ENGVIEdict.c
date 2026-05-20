@@ -5,6 +5,7 @@
 #include "ENGVIEdict.h"
 #include <time.h>
 
+
 // === CAC HAM GIAO DIEN ===
 
 void setColor(int color) {
@@ -39,7 +40,7 @@ void boxHeader(char* title) {
 }
 
 void clearScreen() {
-    system("cls");
+    printf("\033[H\033[J");
 }
 
 // === LOGIC CHUONG TRINH (GIU NGUYEN COMMENT CUA BRO) ===
@@ -778,6 +779,349 @@ void randomQuizFromHistory(const char* histFilename) {
         getch(); // Dung lai xem ket qua truoc khi vong lap reset
     }
 
+    printf("\n\tBam phim bat ky de quay lai menu chinh...");
+    getch();
+}
+
+// ============================================================
+//  FLASHCARD HELPER: Ve khung ASCII bao quanh noi dung the
+//  - content: chuoi can hien thi ben trong khung
+//  - frameColor: ma mau cua khung vien (Windows console color)
+// ============================================================
+static void drawFlashCard(const char* content, int frameColor) {
+    // Do rong cua khung the (tinh theo ky tu, khong tinh indent tab)
+    const int CARD_WIDTH = 50;
+
+    // --- Dong tren cung: +--...--+ ---
+    setColor(frameColor);
+    printf("\n\t+");
+    int i;
+    for (i = 0; i < CARD_WIDTH; i++) printf("-");
+    printf("+\n");
+
+    // --- Hang trong phia tren ---
+    printf("\t|");
+    for (i = 0; i < CARD_WIDTH; i++) printf(" ");
+    printf("|\n");
+
+    // --- Dong noi dung: can giua trong khung ---
+    int contentLen = (int)strlen(content);
+    int totalPad   = CARD_WIDTH - contentLen;
+    int padLeft    = (totalPad > 0) ? totalPad / 2 : 0;
+    int padRight   = (totalPad > 0) ? totalPad - padLeft : 0;
+
+    printf("\t|");
+    for (i = 0; i < padLeft;  i++) printf(" ");
+    setColor(14);          // Mau vang cho chu
+    printf("%s", content);
+    setColor(frameColor);  // Tra mau khung
+    for (i = 0; i < padRight; i++) printf(" ");
+    printf("|\n");
+
+    // --- Hang trong phia duoi ---
+    printf("\t|");
+    for (i = 0; i < CARD_WIDTH; i++) printf(" ");
+    printf("|\n");
+
+    // --- Dong duoi cung: +--...--+ ---
+    printf("\t+");
+    for (i = 0; i < CARD_WIDTH; i++) printf("-");
+    printf("+\n");
+
+    setColor(7); // Reset mau
+}
+
+void flashcardReview(const char* histFilename) {
+    // --- Cau truc luu thong tin moi the ---
+    typedef struct {
+        char word[100];    // Tu tieng Anh
+        char meaning[200]; // Nghia tieng Viet
+    } FlashCard;
+
+    FILE* f;
+    char buf[400];
+
+    // 1. Hien thi man hinh gioi thieu
+    clearScreen();
+    boxHeader("MINI GAME: FLASHCARD LUYEN TU VUNG");
+
+    // 2. Doc lich su tra cuu de lay danh sach tu
+    f = fopen(histFilename, "r");
+    if (f == NULL) {
+        setColor(12);
+        printf("\n\tBan chua co lich su tra cuu nao.\n");
+        printf("\tHay tra tu o muc [1] truoc khi luyen tap nhe!\n");
+        setColor(7);
+        printf("\n\tBam phim bat ky de quay lai menu...");
+        getch();
+        return;
+    }
+
+    /*
+     * HANG DOI (QUEUE) DONG:
+     *   - capacity: so the toi da hien tai (cap phat bang malloc/realloc)
+     *   - qSize   : so the dang co trong hang doi (cap nhat lien tuc)
+     *   - front   : chi so the dang duoc hoc (tang dan, khong bao gio giam)
+     *
+     * Khi nguoi dung chon [2] (Kho), the duoc sao chep vao cuoi mang
+     * (qSize++) de hoc lai sau. Khi front == qSize thi da hoc het.
+     */
+    int capacity = 500;
+    FlashCard* queue = (FlashCard*)malloc(capacity * sizeof(FlashCard));
+    if (queue == NULL) {
+        fclose(f);
+        printf("\tLoi cap phat bo nho!\n");
+        getch();
+        return;
+    }
+    int qSize = 0; // Tong so the trong hang doi (tang khi them the kho)
+    int front = 0; // The dang hoc hien tai
+
+    // Doc tung dong file lich su va nap vao hang doi
+    while (fgets(buf, sizeof(buf), f) && qSize < capacity) {
+        buf[strcspn(buf, "\n")] = 0;
+        if (strlen(buf) == 0) continue;
+
+        char temp[400];
+        strcpy(temp, buf);
+        char* kw  = strtok(temp, "|");
+        char* res = strtok(NULL, "|");
+
+        if (kw == NULL || res == NULL) continue;
+
+        trimStr(kw);
+        trimStr(res);
+
+        // Loai bo entry "Khong tim thay"
+        if (strcasecmp(res, "Khong tim thay") == 0) continue;
+
+        strncpy(queue[qSize].word,    kw,  sizeof(queue[qSize].word)    - 1);
+        strncpy(queue[qSize].meaning, res, sizeof(queue[qSize].meaning) - 1);
+        queue[qSize].word[sizeof(queue[qSize].word)-1]       = '\0';
+        queue[qSize].meaning[sizeof(queue[qSize].meaning)-1] = '\0';
+        qSize++;
+    }
+    fclose(f);
+
+    if (qSize == 0) {
+        setColor(12);
+        printf("\n\tDanh sach tu hoc trong. Hay tra them tu moi nhe!\n");
+        setColor(7);
+        printf("\n\tBam phim bat ky de quay lai menu...");
+        free(queue);
+        getch();
+        return;
+    }
+
+    // Hien thi huong dan ngan
+    int totalOriginal = qSize; // So the goc (truoc khi them the kho)
+    setColor(11);
+    printf("\n\t  Tong so the: %d tu\n", totalOriginal);
+    printf("\t  Enter    = Lat the xem nghia\n");
+    printf("\t  [1]      = De / Da thuoc  -> qua the tiep theo\n");
+    printf("\t  [2]      = Kho / Chua thuoc -> on lai o cuoi hang doi\n");
+    printf("\t  [0]      = Ket thuc phien hoc\n");
+    setColor(7);
+    printf("\n\tNhan phim bat ky de bat dau...");
+    getch();
+
+    // Thong ke phien hoc
+    int countEasy = 0;
+    int countHard = 0;
+    int quitEarly = 0; // Co hieu nguoi dung tu thoat bang [0]
+
+    // ========================
+    //   VONG LAP CHINH GAME
+    // ========================
+    while (front < qSize) {
+
+        // --- Buoc A: Hien thi MAT TRUOC (tieng Anh) ---
+        clearScreen();
+        boxHeader("MINI GAME: FLASHCARD LUYEN TU VUNG");
+
+        // Tinh so the chua hoc va so the kho con lai
+        int remaining   = qSize - front;      // The chua hoc (ke ca the kho)
+        int hardPending = qSize - totalOriginal + countHard - /* so the kho da thuoc */
+                          (countHard - (qSize - totalOriginal)); 
+        // Cach tinh don gian hon: the kho con lai = (qSize - totalOriginal) - (the kho da thuoc)
+        // "the kho da thuoc" = nhung the duoc them vao (qSize - totalOriginal) nhung da qua front
+        int hardTotal  = qSize - totalOriginal; // Tong the kho da tung them
+        int hardDone   = (front > totalOriginal) ? (front - totalOriginal) : 0;
+        int hardLeft   = hardTotal - hardDone; // The kho chua on xong
+        (void)hardLeft; // Tranh canh bao unused variable
+
+        setColor(11);
+        printf("\n\t  The %d/%d  |  Con lai: %d  |  De: %d  |  Kho : %d\n",
+               front + 1, qSize, remaining, countEasy, hardTotal - hardDone);
+        setColor(7);
+
+        printf("\n");
+        setColor(14);
+        printf("\t  *** MAT TRUOC - TU TIENG ANH ***\n");
+        setColor(7);
+        drawFlashCard(queue[front].word, 11); // Khung xanh cyan
+
+        setColor(11);
+        printf("\n\t  [Nhan Enter de lat the xem nghia]");
+        printf("   [0 + Enter = Thoat]\n");
+        setColor(7);
+
+        // Cho nguoi dung nhan Enter (hoac go '0' de thoat)
+        {
+            char inputBuf[10];
+            fgets(inputBuf, sizeof(inputBuf), stdin);
+            removeNewline(inputBuf);
+            trimStr(inputBuf);
+            if (strcmp(inputBuf, "0") == 0) {
+                quitEarly = 1;
+                break;
+            }
+        }
+
+        // --- Buoc B: LAT THE - Hien thi MAT SAU (nghia tieng Viet) ---
+        clearScreen();
+        boxHeader("MINI GAME: FLASHCARD LUYEN TU VUNG");
+
+        setColor(11);
+        printf("\n\t  The %d/%d  |  Con lai: %d  |  De: %d  |  Kho (hang doi): %d\n",
+               front + 1, qSize, remaining, countEasy, hardTotal - hardDone);
+        setColor(7);
+
+        printf("\n");
+        setColor(7);
+        printf("\t  Tu: ");
+        setColor(14);
+        printf("%s\n", queue[front].word);
+        setColor(7);
+
+        printf("\n");
+        setColor(10);
+        printf("\t  *** MAT SAU - NGHIA TIENG VIET ***\n");
+        setColor(7);
+        drawFlashCard(queue[front].meaning, 10); // Khung xanh la
+
+        // --- Buoc C: Danh gia ---
+        setColor(14);
+        printf("\n\t  Tu danh gia:\n");
+        setColor(10);  printf("\t  [1] De / Da thuoc\n");
+        setColor(12);  printf("\t  [2] Kho / Chua thuoc \n");
+        setColor(7);   printf("\t  Lua chon cua ban: ");
+
+        char evalBuf[10];
+        int evalKey = 0;
+        while (evalKey != 1 && evalKey != 2) {
+            fgets(evalBuf, sizeof(evalBuf), stdin);
+            removeNewline(evalBuf);
+            trimStr(evalBuf);
+            if (strcmp(evalBuf, "0") == 0) {
+                evalKey = -1;
+                break;
+            }
+            evalKey = atoi(evalBuf);
+            if (evalKey != 1 && evalKey != 2) {
+                setColor(12);
+                printf("\t  Vui long nhan [1] hoac [2]: ");
+                setColor(7);
+            }
+        }
+
+        if (evalKey == -1) {
+            quitEarly = 1;
+            break;
+        }
+
+        if (evalKey == 1) {
+            // De / Da thuoc: bo qua the nay, chuyen sang the ke tiep
+            countEasy++;
+            setColor(10);
+            printf("\n\t  Tuyet voi! Tiep tuc nao!\n");
+            setColor(7);
+        } else {
+            // Kho / Chua thuoc: SAO CHEP the nay vao CUOI hang doi
+            countHard++;
+
+            // Mo rong mang neu can (realloc khi sap het cho)
+            if (qSize >= capacity) {
+                capacity += 200;
+                FlashCard* newQueue = (FlashCard*)realloc(queue, capacity * sizeof(FlashCard));
+                if (newQueue == NULL) {
+                    // Neu realloc that bai, bo qua buoc them the kho (van tiep tuc)
+                    setColor(12);
+                    printf("\n\t  Canh bao: Khong du bo nho de them the kho vao hang doi!\n");
+                    setColor(7);
+                    front++;
+                    Sleep(700);
+                    continue;
+                }
+                queue = newQueue;
+            }
+
+            // Sao chep the hien tai vao cuoi hang doi
+            strncpy(queue[qSize].word,    queue[front].word,    sizeof(queue[qSize].word)    - 1);
+            strncpy(queue[qSize].meaning, queue[front].meaning, sizeof(queue[qSize].meaning) - 1);
+            queue[qSize].word[sizeof(queue[qSize].word)-1]       = '\0';
+            queue[qSize].meaning[sizeof(queue[qSize].meaning)-1] = '\0';
+            qSize++; // Hang doi dai them 1
+
+            setColor(12);
+            printf("\n\t  Khong sao! The nay se duoc on lai o cuoi hang doi.\n");
+            setColor(7);
+        }
+
+        front++; // Luon chuyen sang the tiep theo sau khi danh gia
+        Sleep(700);
+    }
+
+    // =====================================================
+    //   KET THUC: Hoc het hoac nguoi dung tu thoat [0]
+    // =====================================================
+    clearScreen();
+
+    if (!quitEarly) {
+        // --- Truong hop 1: HOC HET TAT CA TU VUNG ---
+        boxHeader("HOAN THANH PHIEN HOC");
+        setColor(10);
+        printf("\n\t  ***********************************************\n");
+        printf("\t  *                                             *\n");
+        printf("\t  *  Ban da hoc het tu vung co trong flashcard! *\n");
+        printf("\t  *                                             *\n");
+        printf("\t  ***********************************************\n\n");
+        setColor(11);
+        printf("\t  Tong so the goc    : %d\n", totalOriginal);
+        printf("\t  Luot on lai (Kho)  : %d\n", qSize - totalOriginal);
+        setColor(10);
+        printf("\t  Lan thuoc cuoi cung: %d\n", countEasy);
+        setColor(7);
+    } else {
+        // --- Truong hop 2: Nguoi dung tu thoat som ---
+        boxHeader("TONG KET PHIEN HOC");
+        int totalSeen = front; // So the da di qua
+        setColor(11);
+        printf("\n\t  The da xem         : %d / %d\n", totalSeen, qSize);
+        setColor(10);
+        printf("\t  De / Da thuoc      : %d\n", countEasy);
+        setColor(12);
+        printf("\t  Kho / Chua thuoc   : %d\n", countHard);
+        setColor(7);
+
+        if (totalSeen > 0) {
+            int percent = (countEasy * 100) / totalSeen;
+            printf("\n\t  Ti le thuoc bai    : %d%%\n", percent);
+            if (percent >= 80) {
+                setColor(10);
+                printf("\t  Xuat sac! Ban hoc rat tot hom nay!\n");
+            } else if (percent >= 50) {
+                setColor(14);
+                printf("\t  Kha day! Co gang them mot chut nua nhe!\n");
+            } else {
+                setColor(12);
+                printf("\t  Hay on tap them nhung tu kho ban nhe!\n");
+            }
+            setColor(7);
+        }
+    }
+
+    free(queue);
     printf("\n\tBam phim bat ky de quay lai menu chinh...");
     getch();
 }

@@ -3,6 +3,7 @@
 #include <string.h>
 #include <windows.h>
 #include "ENGVIEdict.h"
+#include "gemini.h"  // <-- THEM DONG NAY
 
 int main() {
     SetConsoleOutputCP(437);
@@ -12,7 +13,6 @@ int main() {
     char english[100], vietnamese[200];
     const char* filename = "dictionary.txt";
     const char* historyFile = "history.txt";
-
     loadDictionaryFromFile(&dictionary, filename);
     sortDictionary(&dictionary);
 
@@ -67,8 +67,18 @@ int main() {
                     }
                     
                     // CHỈ GỌI HÀM LƯU VÀO LỊCH SỬ KHI TÌM THẤY TỪ
+                    // Sau khi in ket qua advancedWordSearch, them:
                     if (isFound) {
                         saveSearchHistory(english, histResult, historyFile);
+                        
+                        printf("\n\tBan co muon xem chi tiet tu AI? (1=Co / 0=Khong): ");
+                        int aiChoice;
+                        scanf("%d", &aiChoice);
+                        getchar();
+                        if (aiChoice == 1) {
+                            explainWord(english, histResult);    // Giai thich chi tiet
+                            suggestRelatedWords(english);        // Goi y tu lien quan
+                        }
                     }
                 }
 
@@ -138,7 +148,53 @@ int main() {
                 break;
             
             case 8:
-                randomQuizFromHistory(historyFile);
+                {
+                    int quizChoice;
+                    do {
+                        clearScreen();
+                        boxHeader("CHON CHE DO ON TAP");
+                        setColor(14); printf("\t1. "); setColor(7); printf("On tap truyen thong (He thong tu ra de)\n");
+                        setColor(14); printf("\t2. "); setColor(7); printf("On tap bang flashcard\n"); 
+                        setColor(14); printf("\t3. "); setColor(11); printf("On tap thong minh cung AI Gemini\n");
+                        setColor(12); printf("\t0. "); setColor(7); printf("Quay lai menu chinh\n");
+                        printf("\t-------------------------------\n");
+                        printf("\tLua chon cua ban: ");
+                        
+                        if (scanf("%d", &quizChoice) != 1) {
+                            quizChoice = -1;
+                            while(getchar() != '\n');
+                        }
+                        getchar();
+                        if (quizChoice == 1) {
+                            // Goi ham quiz truyen thong (da co san vong lap ben trong)
+                            randomQuizFromHistory(historyFile); 
+                        } 
+                        else if (quizChoice == 2) {
+                            // Goi ham flashcardReview voi ten file lich su
+                            flashcardReview(historyFile);
+                        }
+                        else if (quizChoice == 3) {
+                            // Goi ham quiz AI va boc vong lap cho no
+                            char tiepTuc;
+                            do {
+                                clearScreen();
+                                smartQuizFromHistory(historyFile); 
+                                
+                                setColor(14);
+                                printf("\n\tBan co muon tiep tuc Quiz AI khong? (y/n): ");
+                                setColor(7);
+                                scanf(" %c", &tiepTuc);
+                                getchar(); // Xoa bo dem ban phim
+                            } while (tolower(tiepTuc) == 'y');
+                        } 
+                        else if (quizChoice != 0) {
+                            setColor(12);
+                            printf("\tLua chon khong hop le. Vui long nhap lai!\n");
+                            setColor(7);
+                            Sleep(1000);
+                        }
+                    } while (quizChoice != 0);
+                }
                 break;
             
             case 0: 

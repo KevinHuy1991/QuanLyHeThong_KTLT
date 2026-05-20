@@ -82,7 +82,6 @@ CEO|Tong giam doc
 Chair|Ghe
 Cheerful|Vui ve, tuoi tan
 Chef|Dau bep
-Chicken|Thit ga
 Chicken|Ga
 Chili|Ot cay
 Chilly|Lanh
@@ -178,7 +177,6 @@ Freelancer|Nguoi lam viec tu do
 Freezing|Ret buot
 Friendly|Than thien
 Fruit|Trai cay, hoa qua
-Fruit|Trai cay
 Frustrated|Buc boi, nan long
 Garlic|Toi
 Garment|Trang phuc, ao quan
@@ -296,8 +294,7 @@ Occupation|Nghe nghiep
 Olive|Mau xanh o liu
 Onion|Hanh tay
 Optimistic|Lac quan
-Orange|Cam
-Orange|Mau cam
+Orange|Mau cam, cam
 Outfit|Trang phuc
 Overcast|U am, am u
 Pajamas|Do ngu
@@ -309,8 +306,7 @@ Passport|Ho chieu
 Patient|Kien nhan
 Pavement|Via he (Anh-Anh)
 Pea|Dau Ha Lan
-Peach|Dao
-Peach|Mau dao
+Peach|Dao, Mau dao
 Pedestrian|Nguoi di bo
 Pen|But muc
 Pencil|But chi
@@ -497,3 +493,761 @@ Writer|Nha van
 Yellow|Mau vang
 Zebra|Ngua van
 Zucchini|Bi xanh
+Ability|Kha nang
+Absolute|Tuyet doi
+Academic|Thuoc ve hoc thuat
+Accept|Chap nhan
+Access|Truy cap
+Accident|Tai nan
+Account|Tai khoan
+Accurate|Chinh xac
+Achieve|Dat duoc
+Action|Hanh dong
+Active|Nang dong
+Activity|Hoat dong
+Actually|Thuc su
+Add|Them vao
+Address|Dia chi
+Adjust|Dieu chinh
+Admin|Quan tri vien
+Advantage|Loi the
+Algorithm|Thuat toan
+Analyze|Phan tich
+Animation|Hoat hinh
+API|Giao dien lap trinh ung dung
+Application|Ung dung
+Architecture|Kien truc
+Argument|Doi so (Lap trinh)
+Array|Mang (Lap trinh)
+Artificial Intelligence|Tri tue nhan tao
+Assembly|Ngon ngu bac thap
+Asset|Tai san
+Assignment|Bai tap, phep gan
+Available|Co san
+Average|Trung binh
+Avoid|Tranh khoi
+Background|Nen tang, ly lich
+Backup|Sao luu
+Balance|Can bang
+Bandwidth|Bang thong
+Base|Co so, nen tang
+Basic|Co ban
+Battery|Pin
+Benefit|Loi ich
+Binary|Nhi phan
+Biology|Sinh hoc
+Bit|Don vi du lieu
+Blank|Trang, trong
+Block|Khoi
+Board|Bang, uy ban
+Boolean|Kieu logic (Dung/Sai)
+Border|Bien gioi, vien
+Branch|Nhanh
+Brave|Dung cam
+Broadcast|Phat song
+Browser|Trinh duyet
+Buffer|Bo dem
+Bug|Loi phan mem
+Build|Xay dung
+Button|Nut bam
+Calculate|Tinh toan
+Camera|May anh
+Campaign|Chien dich
+Cancel|Huy bo
+Capacity|Dung luong, suc chua
+Capital|Thu do, tien von
+Capture|Chop lay, bat giu
+Careful|Can than
+Category|The loai
+Celebrate|An mung
+Center|Trung tam
+Century|The ky
+Ceremony|Buoi le
+Challenge|Thach thuc
+Change|Thay doi
+Character|Ky tu, Nhan vat
+Charge|Sac pin, tinh phi
+Charity|Tu thien
+Chat|Tro chuyen
+Check|Kiem tra
+Chemistry|Hoa hoc
+Choice|Su lua chon
+Circle|Hinh tron
+Circuit|Mach dien
+Citizen|Cong dan
+City|Thanh pho
+Class|Lop hoc, Lop (Lap trinh)
+Classic|Kinh dien
+Clean|Sach se
+Clear|Ro rang
+Client|May khach, khach hang
+Cloud computing|Dien toan dam may
+Code|Ma nguon
+Collect|Thu thap
+College|Truong cao dang
+Color|Mau sac
+Column|Cot
+Combine|Ket hop
+Command|Lenh
+Comment|Binh luan, chu thich
+Commercial|Thuong mai
+Commit|Luu vet (Git)
+Common|Pho bien
+Communicate|Giao tiep
+Communication|Vien thong, Su giao tiep
+Company|Cong ty
+Compare|So sanh
+Compile|Bien dich
+Compiler|Trinh bien dich
+Complete|Hoan thanh
+Complex|Phuc tap
+Component|Thanh phan
+Compute|Tinh toan
+Computer|May tinh
+Concept|Khai niem
+Condition|Dieu kien
+Conference|Hoi nghi
+Connect|Ket noi
+Connection|Su ket noi
+Constant|Hang so
+Construction|Xay dung
+Contact|Lien lac
+Context|Ngu cho
+Control|Dieu khien
+Copy|Sao chep
+Core|Loi, trung tam
+Cost|Chi phi
+Count|Dem
+Country|Quoc gia
+Course|Khoa hoc
+Create|Tao ra
+Credit|Tin dung
+Crime|Toi pham
+Crisis|Khung hoang
+Culture|Van hoa
+Current|Hien tai
+Customer|Khach hang
+Cybersecurity|An ninh mang
+Daily|Hang ngay
+Damage|Thiet hai
+Data|Du lieu
+Database|Co so du lieu
+Date|Ngay thang
+Dead|Chet
+Deal|Thoa thuan
+Debug|Go loi
+Decade|Thap ky
+Decide|Quyet dinh
+Decision|Quyet dinh
+Declare|Khai bao
+Decrease|Giam
+Deep|Sau
+Default|Mac dinh
+Defect|Loi, khuyet diem
+Define|Dinh nghia
+Degree|Bang cap, nhiet do
+Delay|Tri hoan
+Delete|Xoa
+Deliver|Giao hang
+Demand|Nhu cau
+Department|Phong ban
+Depend|Phu thuoc
+Deploy|Trien khai
+Design|Thiet ke
+Desktop|Man hinh chinh
+Detail|Chi tiet
+Detect|Phat hien
+Develop|Phat trien
+Developer|Lap trinh vien
+Device|Thiet bi
+Dictionary|Tu dien
+Difference|Su khac biet
+Difficult|Kho khan
+Digital|Ky thuat so
+Direction|Phuong huong
+Directory|Thu muc
+Disable|Vo hieu hoa
+Discover|Kham pha
+Discuss|Thao luan
+Display|Hien thi
+Distance|Khoang cach
+Divide|Chia
+Document|Tai lieu
+Domain|Ten mien
+Download|Tai xuong
+Drive|Lai xe, O dia
+Drop|Roi, xoa bo
+Dynamic|Dong, linh hoat
+Early|Som
+Earn|Kiem duoc
+Earth|Trai dat
+Easy|De dang
+Economy|Kinh te
+Edge|Canh, ria
+Edit|Chinh sua
+Education|Giao duc
+Effect|Hieu ung
+Efficiency|Hieu suat
+Effort|No luc
+Element|Phan tu
+Email|Thu dien tu
+Embed|Nhung (code)
+Emotion|Cam xuc
+Employ|Thue muon
+Empty|Trong rong
+Enable|Kich hoat
+Encrypt|Ma hoa
+Energy|Nang luong
+Engine|Dong co
+Environment|Moi truong
+Equal|Bang nhau
+Error|Loi
+Event|Su kien
+Exception|Ngoai le
+Execute|Thuc thi
+Exit|Thoat
+Expect|Mong doi
+Experience|Kinh nghiem
+Expert|Chuyen gia
+Export|Xuat khau, xuat file
+Expression|Bieu thuc
+Extension|Tien ich mo rong
+External|Bên ngoai
+Factor|Yeu to
+Fail|That bai
+Fake|Gia mao
+False|Sai
+Familiar|Quen thuoc
+Famous|Noi tieng
+Feature|Tinh nang
+Fetch|Lay du lieu
+Field|Truong du lieu, canh dong
+File|Tap tin
+Filter|Bo loc
+Final|Cuoi cung
+Find|Tim kiem
+Finish|Ket thuc
+Firewall|Tuong lua
+Firmware|Phan mem he thong
+Fix|Sua chua
+Flag|Co, danh dau
+Float|So thuc
+Flow|Dong chay
+Folder|Thu muc
+Font|Phom chu
+Force|Luc luong, ep buoc
+Format|Dinh dang
+Framework|Khung lam viec
+Free|Mien phi
+Frequent|Thuong xuyen
+Front|Phat hien
+Function|Ham (Lap trinh)
+Fund|Quy
+Future|Tuong lai
+Game|Tro choi
+Gateway|Cong mang
+Gather|Thu thap
+General|Chung
+Generate|Tao ra
+Generation|The he
+Global|Toan cau
+Goal|Muc tieu
+Graph|Do thi
+Graphic|Do hoa
+Grid|Luoi
+Group|Nhom
+Growth|Su phat trien
+Guess|Doan
+Guide|Huong dan
+Habit|Thoi quen
+Half|Mot nua
+Handle|Xu ly
+Hardware|Phan cung
+Hash|Bam du lieu
+Header|Tieu de
+Health|Suc khoe
+Heap|Vung nho Heap
+Heart|Trai tim
+Height|Chieu cao
+Help|Giup do
+Hidden|An
+History|Lich su
+Hold|Giu
+Home|Nha
+Hope|Hy vong
+Host|May chu
+Hour|Gio
+Huge|To lon
+Human|Con nguoi
+Idea|Y tuong
+Identify|Nhan dang
+Ignore|Bo qua
+Image|Hinh anh
+Impact|Tac dong
+Implement|Trien khai, thuc hien
+Import|Nhap khau, nhap vao
+Important|Quan trong
+Improve|Cai thien
+Include|Bao gom
+Income|Thu nhap
+Increase|Tang
+Index|Chi muc
+Industry|Cong nghiep
+Information|Thong tin
+Inherit|Thua ke
+Initial|Ban dau
+Input|Dau vao
+Insert|Chen vao
+Install|Cai dat
+Instance|Doi tuong the hien
+Integer|So nguyen
+Integrate|Tich hop
+Intelligence|Tri thong minh
+Interface|Giao dien
+Internal|Ben trong
+Internet|Mang internet
+Interrupt|Ngat quang
+Interview|Phong van
+Invest|Dau tu
+Issue|Van de
+Item|Vat pham
+Join|Tham gia, ket noi
+Jump|Nhay
+Kernel|Loi he dieu hanh
+Key|Khoa, phim
+Keyboard|Ban phim
+Keyword|Tu khoa
+Knowledge|Kien thuc
+Label|Nhan
+Language|Ngon ngu
+Large|Lon
+Late|Tre
+Layer|Lop
+Layout|Bo cuc
+Leader|Lanh dao
+Learn|Hoc
+Leave|Roi di
+Left|Ben trai
+Length|Chieu dai
+Level|Cap do
+Library|Thu vien
+License|Giay phep
+Limit|Gioi han
+Line|Dong
+Link|Lien ket
+List|Danh sach
+Listen|Nghe
+Load|Tai len
+Local|Cuc bo, dia phuong
+Location|Vi tri
+Lock|Khoa
+Log|Nhat ky he thong
+Logic|Logic
+Login|Dang nhap
+Loop|Vong lap
+Machine|May moc
+Macro|Lenh vi mo
+Main|Chinh
+Maintain|Bao tri
+Major|Chuyen nganh, lon
+Manage|Quan ly
+Map|Ban do
+Margin|Le
+Market|Thi truong
+Master|Bac thay, nhanh chinh
+Match|Phu hop, tran dau
+Material|Vat lieu
+Math|Toan hoc
+Matrix|Ma tran
+Matter|Van de
+Maximum|Toi da
+Meaning|Y nghia
+Measure|Do luong
+Media|Truyen thong
+Memory|Bo nho
+Menu|Thuc don
+Merge|Gop, tron
+Message|Tin nhan
+Method|Phuong thuc
+Middle|O giua
+Minimum|Toi thieu
+Minute|Phut
+Mirror|Guong
+Miss|Bo lo
+Mobile|Di dong
+Mode|Che do
+Model|Mo hinh
+Modern|Hien dai
+Module|Hoc phan, mo-dun
+Moment|Khoanh khac
+Monitor|Man hinh, giam sat
+Month|Thang
+Morning|Buoi sang
+Motion|Chuyen dong
+Mouse|Chuot (may tinh)
+Move|Di chuyen
+Multiple|Nhieu
+Music|Am nhac
+Name|Ten
+National|Quoc gia
+Native|Ban dia
+Natural|Tu nhien
+Navigate|Dieu huong
+Network|Mang luoi
+News|Tin tuc
+Node|Diem nut
+Noise|Tieng on
+Normal|Binh thuong
+Note|Ghi chu
+Notice|Thong bao
+Null|Rong, khong co gia tri
+Number|Con so
+Object|Doi tuong
+Observe|Quan sat
+Obtain|Dat duoc
+Occur|Xay ra
+Offer|De nghi
+Office|Van phong
+Offset|Do lech
+Offline|Ngoai tuyen
+Online|Truc tuyen
+Open|Mo
+Operate|Hoat dong
+Operator|Toan tu
+Opinion|Y kien
+Option|Tung chon
+Order|Thu tu, don hang
+Origin|Nguon goc
+Output|Dau ra
+Outside|Ben ngoai
+Over|Vuot qua
+Override|Ghi de
+Owner|Chu so huu
+Package|Goi phan mem
+Page|Trang
+Paint|Son, ve
+Panel|Bang dieu khien
+Parameter|Tham so
+Parent|Lop cha, phu huynh
+Parse|Phan tich cu phap
+Part|Phan
+Partner|Doi tac
+Party|Bua tiec
+Pass|Vượt qua
+Password|Mat khau
+Paste|Dan
+Path|Duong dan
+Pattern|Mau, kieu
+Pause|Tam dung
+Pay|Tra tien
+Peace|Hoa binh
+People|Con nguoi
+Perform|Thuc hien
+Performance|Hieu suat
+Period|Thoi ky
+Permission|Quyen phep
+Person|Nguoi
+Phase|Giai doan
+Phone|Dien thoai
+Photo|Buc anh
+Physical|Vat ly
+Pick|Chon
+Picture|Buc tranh
+Piece|Manh
+Place|Dia diem
+Plan|Ke hoach
+Plant|Thuc vat
+Platform|Nen tang
+Play|Choi
+Plugin|Trinh cam them
+Point|Diem
+Pointer|Con tro (Lap trinh)
+Policy|Chinh sach
+Port|Cong ket noi
+Position|Vi tri
+Positive|Tich cuc
+Possible|Co the
+Post|Bai dang
+Power|Nang luong, quyen luc
+Practice|Thuc hanh
+Predict|Du doan
+Prepare|Chuan bi
+Present|Hien tai, qua tang
+Press|Nhan, an
+Prevent|Ngan chan
+Price|Gia ca
+Primary|Chinh, so cap
+Print|In an
+Private|Rieng tu
+Problem|Van de
+Process|Tien trinh
+Product|San pham
+Profile|Ho so
+Program|Chuong trinh
+Progress|Tien do
+Project|Du an
+Promise|Loi hua
+Property|Thuoc tinh
+Protect|Bao ve
+Protocol|Giao thuc
+Prove|Chung minh
+Provide|Cung cap
+Public|Cong cong
+Publish|Xuat ban
+Pull|Keo
+Push|Day
+Put|Dat, de
+Quality|Chat luong
+Query|Truy van
+Question|Cau hoi
+Queue|Hang doi
+Quick|Nhanh chong
+Quiet|Yen tinh
+Quote|Trich dan
+Radio|Dai phat thanh
+Random|Ngau nhien
+Range|Pham vi
+Rate|Ty le
+Reach|Dat toi
+Read|Doc
+Ready|San sang
+Real|Thuc te
+Reason|Ly do
+Receive|Nhan
+Recent|Gan day
+Record|Ban ghi
+Recover|Khoi phuc
+Reference|Tham chieu
+Region|Khu vuc
+Register|Dang ky
+Regular|Deu dan
+Reject|Tu choi
+Relation|Moi quan he
+Release|Phat hanh
+Reliable|Dang tin cay
+Remember|Nho
+Remote|Tu xa
+Remove|Gỡ bo
+Render|Ket xuat
+Repair|Sua chua
+Repeat|Lap lai
+Replace|Thay the
+Reply|Tra loi
+Report|Bao cao
+Request|Yeu cau
+Require|Doi hoi
+Research|Nghien cuu
+Reset|Dat lai
+Resolve|Giai quyet
+Resource|Tai nguyen
+Respond|Phan hoi
+Response|Cau tra loi
+Restart|Khoi dong lai
+Result|Ket qua
+Return|Tra ve
+Review|Danh gia
+Right|Ben phai, dung
+Risk|Rui ro
+Role|Vai tro
+Rollback|Hoan tac
+Root|Goc
+Route|Tuyen duong
+Row|Hang
+Rule|Quy tac
+Run|Chay
+Safe|An toan
+Save|Luu lai
+Scale|Quy mo, ty le
+Scan|Quet
+Scene|Canh
+Schedule|Lich trinh
+Science|Khoa hoc
+Scope|Pham vi
+Screen|Man hinh
+Script|Kich ban, ma lenh
+Scroll|Cuon
+Search|Tim kiem
+Season|Mua
+Second|Giay (thoi gian)
+Secret|Bi mat
+Section|Phan, doan
+Secure|Bao mat
+Security|An ninh
+Select|Chon
+Send|Gui
+Sense|Giac quan
+Server|May chu
+Service|Dich vu
+Session|Phien lam viec
+Set|Cai dat, tap hop
+Setting|Cai dat
+Setup|Thiet lap
+Shadow|Bong ram
+Shape|Hinh dang
+Share|Chia se
+Shift|Ca lam viec, Dịch chuyen
+Shop|Cua hang
+Short|Ngan
+Show|Hien thi
+Side|Canh, phia
+Sign|Ky ten, dau hieu
+Signal|Tin hieu
+Signature|Chu ky
+Significant|Quan trong
+Silence|Im lang
+Similar|Tuong tu
+Simple|Don gian
+Single|Don
+Site|Trang web, vi tri
+Size|Kich thuoc
+Skill|Ky nang
+Sleep|Ngu
+Slide|Truot
+Small|Nho
+Smart|Thong minh
+Smile|Cuoi
+Social|Xa hoi
+Software|Phan mem
+Solution|Giai phap
+Solve|Giai quyet
+Sort|Sap xep
+Sound|Am thanh
+Source|Nguon
+Space|Khong gian
+Speak|Noi
+Special|Dac biet
+Specific|Cu the
+Speed|Toc do
+Spell|Danh van
+Spend|Tieu xai
+Split|Chia cat
+Sport|The thao
+Spring|Mua xuan
+Stack|Ngan xep
+Stage|Giai doan
+Standard|Tieu chuan
+Star|Ngoi sao
+Start|Bat dau
+State|Trang thai
+Statement|Cau lenh
+Static|Tinh
+Station|Nha ga
+Status|Trang thai
+Step|Buoc
+Stop|Dung lai
+Storage|Luu tru
+Store|Cua hang, luu tru
+Story|Cau chuyen
+Stream|Dong du lieu
+Street|Con duong
+String|Chuoi ky tu
+Strong|Manh me
+Structure|Cau truc
+Student|Sinh vien
+Study|Hoc tap
+Style|Phong cach
+Subject|Chu de
+Submit|Nop
+Success|Thanh cong
+Sudden|Dot ngot
+Suggest|Goi y
+Summary|Tom tat
+Summer|Mua he
+Support|Ho tro
+Surface|Be mat
+Switch|Chuyen doi
+Symbol|Bieu tuong
+Sync|Dong bo
+Syntax|Cu phap
+System|He thong
+Table|Bang
+Tag|The
+Take|Lay
+Talk|Noi chuyen
+Target|Muc tieu
+Task|Nhiem vu
+Teacher|Giao vien
+Team|Doi, nhom
+Technology|Cong nghe
+Template|Mau
+Term|Thuat ngu
+Test|Kiem tra
+Text|Van ban
+Theme|Chu de
+Theory|Ly thuyet
+Think|Suy nghi
+Thread|Luong (Lap trinh)
+Time|Thoi gian
+Title|Tieu de
+Token|Ma thong bao
+Tool|Cong cu
+Top|Dinh, phia tren
+Topic|Chu de
+Total|Tong cong
+Touch|Cham
+Track|Theo doi
+Trade|Thuong mai
+Traffic|Giao thong, luu luong
+Train|Dao tao, tau hoa
+Transaction|Giao dich
+Translate|Dich
+Transport|Giao thong van tai
+Tree|Cay
+Trigger|Kich hoat
+True|Dung
+Trust|Tin tuong
+Try|Thu
+Turn|Xoay, luot
+Type|Kieu du lieu
+Undo|Hoan tac
+Union|Lien hiep
+Unique|Doc nhat
+Unit|Don vi
+Unknown|Khong xac dinh
+Unlock|Mo khoa
+Update|Cap nhat
+Upload|Tai len
+Url|Duong dan web
+Use|Su dung
+User|Nguoi dung
+Valid|Hop le
+Value|Gia tri
+Variable|Bien so
+Vector|Vector
+Verify|Xac minh
+Version|Phien ban
+Video|Video
+View|Che do xem
+Virtual|Ao
+Vision|Tam nhin
+Visit|Chuyen tham
+Voice|Giong noi
+Volume|Am luong
+Wait|Cho doi
+Walk|Di bo
+Warning|Canh bao
+Watch|Xem
+Water|Nuoc
+Way|Cach thuc
+Weather|Thoi tiet
+Web|Mang luoi
+Weight|Trong luong
+Welcome|Chao mung
+While|Trong khi
+White|Mau trang
+Width|Chieu rong
+Window|Cua so
+Winter|Mua dong
+Wire|Day cap
+Word|Tu vung
+Work|Lam viec
+World|The gioi
+Write|Viet
+Wrong|Sai
+Year|Nam
+Yellow|Mau vang
+Yes|Co
+Yield|San luong, nhuong
+Zero|So khong
+Zone|Khu vuc
+Zoom|Phong to

@@ -10,7 +10,6 @@ typedef struct Node {
     char meaning[200];    // Nghia tieng Viet[cite: 2]
     struct Node* next;
 } Node;
-
 // === CAU TRUC LICH SU TRA CUU ===
 typedef struct HistoryNode {
     char keyword[100];       // Tu da tra
@@ -60,5 +59,6 @@ void cleanHistory(const char* histFilename, Node* dictHead);
 void printHistory(const char* filename, Node* dictHead);
 
 void randomQuizFromHistory(const char* histFilename);
+void flashcardReview(const char* histFilename);
 
 #endif
