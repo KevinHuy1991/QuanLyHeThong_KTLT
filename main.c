@@ -3,7 +3,7 @@
 #include <string.h>
 #include <windows.h>
 #include "ENGVIEdict.h"
-#include "gemini.h"  // <-- THEM DONG NAY
+#include "gemini.h"  //Goi ham tu Gemini API
 
 int main() {
     SetConsoleOutputCP(437);

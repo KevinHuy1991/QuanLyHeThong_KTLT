@@ -1,498 +1,3 @@
-Accountant|Ke toan
-Actor|Nam dien vien
-Actress|Nu dien vien
-Adventure|Cuoc phieu luu
-Affectionate|Triu men, yeu thuong
-Aggressive|Hung hang
-Air pollution|O nhiem khong khi
-Airplane|May bay
-Airport|San bay
-Animal|Dong vat
-Annoyed|Kho chiu, buc minh
-Anxious|Lo lang, bat an
-Appetizer|Mon khai vi
-Apple|Tao
-Architect|Kien truc su
-Arrival|Su den noi
-Arrogant|Kieu ngao
-Artist|Hoa si, nghe si
-Asparagus|Mang tay
-Assistant|Tro ly
-Attendance|Su chuyen can
-Aunt|Co, di
-Autumn|Mua thu
-Backpack|Ba lo
-Baggage claim|Khu nhan hanh ly
-Baker|Tho lam banh
-Banana|Chuoi
-Banker|Nhan vien ngan hang
-Barber|Tho cat toc nam
-Bathrobe|Ao choang tam
-Bean|Dau
-Bear|Gau
-Beef|Thit bo
-Beetroot|Cu den
-Beige|Mau be
-Bell pepper|Ot chuong
-Belt|That lung
-Bicycle|Xe dap
-Biodiversity|Da dang sinh hoc
-Bitter|Dang
-Black|Mau den
-Blackboard|Bang den
-Blizzard|Bao tuyet
-Blouse|Ao so mi nu
-Blue|Mau xanh duong
-Blueberry|Viet quat
-Boarding pass|The len may bay
-Boat|Thuyen
-Bone|Xuong
-Boots|Ung, bot
-Boss|Sep, ong chu
-Bow tie|No deo co nam
-Bra|Ao nguc
-Brain|Nao bo
-Brave|Dung cam
-Bread|Banh mi
-Breakfast|Bua sang
-Breezy|Co gio nhe
-Bridge|Cay cau
-Briefs|Quan lot nam
-Broccoli|Bong cai xanh
-Brother|Anh, em trai
-Brother-in-law|Anh/em re
-Brown|Mau nau
-Budget|Ngan sach
-Buffalo|Trau
-Bus|Xe buyt
-Businessman|Nam doanh nhan
-Businesswomanz|Nu doanh nhan
-Cabbage|Bap cai
-Cap|Mu luoi trai
-Car|Xe o to
-Carbon footprint|Dau chan carbon
-Career|Su nghiep
-Carpenter|Tho moc
-Carrot|Ca rot
-Casual wear|Trang phuc thuong ngay
-Cat|Meo
-Cauliflower|Sup lo trang
-Celery|Can tay
-CEO|Tong giam doc
-Chair|Ghe
-Cheerful|Vui ve, tuoi tan
-Chef|Dau bep
-Chicken|Ga
-Chili|Ot cay
-Chilly|Lanh
-Classroom|Lop hoc
-Climate|Khi hau
-Climate|Khi hau
-Clothes|Quan ao
-Clothing|Quan ao (noi chung)
-Cloud|Dam may
-Cloudy|Nhieu may
-Coat|Ao khoac dai
-Cold|Lanh
-Color|Mau sac
-Confident|Tu tin
-Confused|Boi roi
-Conservation|Su bao ton
-Consultant|Co van
-Coral|Mau san ho
-Corn|Ngo, bap
-Cousin|Anh/chi/em ho
-Cow|Bo
-Creative|Sang tao
-Crosswalk|Vach sang duong
-Cucumber|Dua chuot
-Cuisine|Am thuc
-Currency|Tien te
-Cyan|Mau xanh lo
-Daughter|Con gai
-Deforestation|Nan pha rung
-Delicious|Ngon
-Dentist|Nha si
-Departure|Su khoi hanh
-Depressed|Chan nan, tram cam
-Describe|Mo ta
-Designer|Nha thiet ke
-Desk|Ban hoc
-Dessert|Mon trang mieng
-Destination|Diem den
-Dinner|Bua toi
-Diploma|Bang tot nghiep
-Director|Giam doc
-Disappointed|That vong
-Disease|Benh tat
-Dish|Mon an
-Doctor|Bac si
-Dog|Cho
-Dolphin|Ca heo
-Downpour|Mua lon, mua nhu trut
-Dress|Vay lien
-Driver|Tai xe
-Drizzle|Mua phun
-Drought|Han han
-Drought|Han han
-Duck|Vit
-Earthquake|Dong dat
-Ecosystem|He sinh thai
-Egg|Trung
-Eggplant|Ca tim
-Electrician|Tho dien
-Elephant|Voi
-Embarrassed|Xau ho, nguong ngung
-Emergency|Khan cap
-Employee|Nhan vien
-Employer|Nha tuyen dung
-Endangered species|Cac loai co nguy co tuyet chung
-Engineer|Ky su
-Entrepreneur|Doanh nhan
-Envious|Do ky
-Environment|Moi truong
-Exam|Ky thi
-Excited|Hao hung
-Exercise|Tap the duc
-Explain|Giai thich
-Family|Gia dinh
-Father|Bo, cha
-Father-in-law|Bo chong/bo vo
-Fearful|So hai
-Ferry|Pha
-Firefighter|Linh cuu hoa
-Fish|Ca
-Flight|Chuyen bay
-Flight attendant|Tiep vien hang khong
-Flip-flops|Dep tong
-Flood|Lu lut
-Fog|Suong mu
-Foggy|Nhieu suong mu
-Food|Thuc an
-Forecast|Du bao thoi tiet
-Formal wear|Trang phuc trang trong
-Fossil fuel|Nhien lieu hoa thach
-Fox|Cao
-Freelancer|Nguoi lam viec tu do
-Freezing|Ret buot
-Friendly|Than thien
-Fruit|Trai cay, hoa qua
-Frustrated|Buc boi, nan long
-Garlic|Toi
-Garment|Trang phuc, ao quan
-Generous|Hao phong
-Ginger|Gung
-Giraffe|Huou cao co
-Global warming|Su nong len toan cau
-Gloves|Gang tay
-Goat|De
-Gold|Vang
-Goose|Ngong
-Gown|Vay da hoi
-Grade|Lop, diem so
-Granddaughter|Chau gai (noi/ngoai)
-Grandfather|Ong
-Grandmother|Ba
-Grandparents|Ong ba
-Grandson|Chau trai (noi/ngoai)
-Grape|Nho
-Grateful|Biet on
-Gray|Mau xam
-Green|Mau xanh la cay
-Greenhouse effect|Hieu ung nha kinh
-Guidebook|Sach huong dan
-Guilty|Cam thay co loi
-Habitat|Moi truong song
-Hail|Mua da
-Hairdresser|Tho lam toc nu
-Hamster|Chuot hamster
-Happy|Hanh phuc, vui ve
-Hardworking|Cham chi
-Hat|Mu rong vanh
-Health|Suc khoe
-Heart|Trai tim
-Heatwave|Dot nang nong
-High heels|Giay cao got
-Highway|Duong cao toc
-Homework|Bai tap ve nha
-Honest|Trung thuc
-Hopeful|Hy vong
-Horse|Ngua
-Hostel|Nha tro
-Hotel|Khach san
-Humble|Khiem ton
-Humid|Am uot
-Humidity|Do am
-Hurricane|Bao lon (o Dai Tay Duong)
-Husband|Chong
-Impatient|Nong nay, thieu kien nhan
-In-laws|Gia dinh ben chong/vo
-Infection|Nhiem trung
-Ingredient|Nguyen lieu
-Insurance|Bao hiem
-Intersection|Nga tu, giao lo
-IT specialist|Chuyen gia CNTT
-Itinerary|Lich trinh
-Jacket|Ao khoac ngan
-Jealous|Ghen ti
-Jeans|Quan bo
-Job|Cong viec, nghe nghiep
-Journalist|Nha bao
-Journey|Hanh trinh
-Joyful|Vui suong
-Judge|Tham phan
-Kind|Tot bung, tu te
-Laboratory|Phong thi nghiem
-Landmark|Danh lam thang canh
-Lavender|Mau tim nhat
-Lawyer|Luat su
-Lazy|Luoi bieng
-Leggings|Quan legging
-Lemon|Chanh vang
-Lesson|Bai hoc
-Lettuce|Rau xa lach
-Library|Thu vien
-Lightning|Tia chop
-Lime|Chanh xanh
-Lion|Su tu
-Lonely|Co don
-Loving|Day yeu thuong
-Luggage|Hanh ly
-Lunch|Bua trua
-Magenta|Mau do tuoi
-Main course|Mon chinh
-Manager|Quan ly
-Mango|Xoai
-Map|Ban do
-Maroon|Mau do nau
-Meal|Bua an
-Meat|Thit
-Mechanic|Tho sua may
-Medicine|Thuoc
-Mist|Suong mu nhe
-Model|Nguoi mau
-Monkey|Khi
-Moody|Tinh khi that thuong
-Mother|Me
-Mother-in-law|Me chong/me vo
-Motorcycle|Xe may
-Mouse|Chuot
-Muscle|Co bap
-Mushroom|Nam
-Musician|Nhac si
-Natural disaster|Tham hoa thien nhien
-Nature|Thien nhien
-Navy|Mau xanh nuoc bien dam
-Nephew|Chau trai
-Nervous|Lo lang, bon chon
-Niece|Chau gai
-Noodles|Mi, bun, pho
-Notebook|Vo, so ghi chep
-Nurse|Y ta
-Nutrition|Dinh duong
-Occupation|Nghe nghiep
-Olive|Mau xanh o liu
-Onion|Hanh tay
-Optimistic|Lac quan
-Orange|Mau cam, cam
-Outfit|Trang phuc
-Overcast|U am, am u
-Pajamas|Do ngu
-Panties|Quan lot nu
-Pants|Quan (Anh-My)
-Parents|Bo me
-Parking lot|Bai do xe
-Passport|Ho chieu
-Patient|Kien nhan
-Pavement|Via he (Anh-Anh)
-Pea|Dau Ha Lan
-Peach|Dao, Mau dao
-Pedestrian|Nguoi di bo
-Pen|But muc
-Pencil|But chi
-Pessimistic|Bi quan
-Pet|Thu cung
-Pharmacist|Duoc si
-Photographer|Nhiep anh gia
-Pig|Lon
-Pilot|Phi cong
-Pineapple|Dua, thom
-Pink|Mau hong
-Plastic waste|Rac thai nhua
-Playground|San choi
-Plum|Man
-Plumber|Tho sua ong nuoc
-Police officer|Canh sat
-Polite|Lich su
-Pollution|O nhiem
-Polo shirt|Ao polo
-Pork|Thit heo
-Potato|Khoai tay
-Principal|Hieu truong
-Professor|Giao su
-Programmer|Lap trinh vien
-Proud|Tu hao
-Pumpkin|Bi ngo
-Purple|Mau tim
-Rabbit|Tho
-Radish|Cu cai do
-Rain|Mua
-Raincoat|Ao mua
-Rainy|Co mua
-Raspberry|Mam xoi
-Rat|Chuot cong
-Real estate agent|Nhan vien moi gioi bat dong san
-Recess|Gio giai lao
-Recommend|De xuat
-Recovery|Hoi phuc
-Recycling|Tai che
-Red|Mau do
-Relaxed|Thu gian
-Reliable|Dang tin cay
-Renewable energy|Nang luong tai tao
-Researcher|Nha nghien cuu
-Resort|Khu nghi duong
-Responsible|Co trach nhiem
-Rice|Com, gao
-Road|Con duong
-Roundabout|Bung binh
-Rude|Tho lo, bat lich su
-Salad|Salad, rau tron
-Salty|Man
-Sandals|Dep xang dan
-Satisfied|Hai long
-Scarf|Khan quang co
-Scholarship|Hoc bong
-School|Truong hoc
-Scientist|Nha khoa hoc
-Score|Diem so
-Seafood|Hai san
-Season|Mua
-Seatbelt|Day an toan
-Secretary|Thu ky
-Selfish|Ich ky
-Shark|Ca map
-Sheep|Cuu
-Shirt|Ao so mi
-Shocked|Soc, kinh ngac
-Shoes|Giay
-Shorts|Quan dui
-Shower|Mua rao
-Shy|Nhut nhat, e then
-Sibling|Anh chi em ruot
-Sidewalk|Via he (Anh-My)
-Sightseeing|Tham quan
-Silver|Mau bac
-Sister|Chi, em gai
-Sister-in-law|Chi/em dau
-Skirt|Chan vay
-Snack|Do an nhe
-Snake|Ran
-Sneakers|Giay the thao
-Snow|Tuyet
-Snowy|Co tuyet
-Socks|Tat, vo
-Soil pollution|O nhiem dat
-Solar energy|Nang luong mat troi
-Soldier|Linh, quan nhan
-Son|Con trai
-Soup|Sup, canh
-Sour|Chua
-Souvenir|Luu niem
-Speed limit|Gioi han toc do
-Spicy|Cay
-Spinach|Rau chan vit
-Spring|Mua xuan
-Stepdaughter|Con gai rieng cua vo/chong
-Stepfather|Bo duong
-Stepmother|Me ke
-Stepson|Con trai rieng cua vo/chong
-Stockings|Tat dai
-Stomach|Da day
-Storm|Bao
-Stormy|Co bao
-Strawberry|Dau tay
-Street|Duong pho
-Stubborn|Cung dau, buong binh
-Student|Hoc sinh
-Subject|Mon hoc
-Subway|Tau dien ngam (Anh-My)
-Suit|Bo vest
-Summer|Mua he
-Sunglasses|Kinh ram
-Sunny|Nang, troi nang
-Sunshine|Anh nang
-SunSun|Mat troi
-Surgeon|Bac si phau thuat
-Surgery|Phau thuat
-Sustainable|Ben vung
-Sweater|Ao co mu trum
-Sweet|Ngot
-Sweet potato|Khoai lang
-Symptom|Trieu chung
-T-shirt|Ao thun
-Tank top|Ao ba lo
-Taxi|Xe taxi
-Teacher|Giao vien
-Teacher|Giao vien
-Teal|Mau xanh mong ket
-Temperature|Nhiet do
-Test|Bai kiem tra
-Thunder|Sam
-Thunderstorm|Giong bao
-Ticket|Ve
-Tie|Ca vat
-Tiger|Ho
-Tired|Met moi
-Tomato|Ca chua
-Tornado|Loc xoay
-Tourist|Khach du lich
-Tourist attraction|Diem thu hut du lich
-Traffic|Giao thong
-Traffic jam|Tac duong
-Traffic light|Den giao thong
-Train|Tau hoa
-Travel|Du lich, di du lich
-Treatment|Dieu tri
-Trip|Chuyen di
-Trousers|Quan dai
-Tunnel|Duong ham
-Turquoise|Mau xanh ngoc
-Turtle|Rua
-Tuxedo|Bo le phuc nam
-Typhoon|Bao nhiet doi (o Thai Binh Duong)
-Uncle|Chu, bac, cau
-Underground|Tau dien ngam (Anh-Anh)
-Underwear|Do lot
-Uniform|Dong phuc
-Uniform|Dong phuc
-Vacation|Ky nghi
-Vegetable|Rau cu
-Vegetable|Rau cu
-Vehicle|Phuong tien giao thong
-Visa|Thi thuc
-Waiter|Boi ban nam
-Waitress|Boi ban nu
-Warm|Am ap
-Waste|Rac thai
-Water pollution|O nhiem nuoc
-Watermelon|Dua hau
-Weather|Thoi tiet
-Whale|Ca voi
-White|Mau trang
-Whiteboard|Bang trang
-Wife|Vo
-Wildfire|Chay rung
-Wind|Gio
-Wind power|Nang luong gio
-Windy|Co gio
-Winter|Mua dong
-Wolf|Soi
-Work|Cong viec
-Writer|Nha van
-Yellow|Mau vang
-Zebra|Ngua van
-Zucchini|Bi xanh
 Ability|Kha nang
 Absolute|Tuyet doi
 Academic|Thuoc ve hoc thuat
@@ -500,69 +5,151 @@ Accept|Chap nhan
 Access|Truy cap
 Accident|Tai nan
 Account|Tai khoan
+Accountant|Ke toan
 Accurate|Chinh xac
 Achieve|Dat duoc
 Action|Hanh dong
 Active|Nang dong
 Activity|Hoat dong
+Actor|Nam dien vien
+Actress|Nu dien vien
 Actually|Thuc su
 Add|Them vao
 Address|Dia chi
 Adjust|Dieu chinh
 Admin|Quan tri vien
 Advantage|Loi the
+Adventure|Cuoc phieu luu
+Affectionate|Triu men, yeu thuong
+Aggressive|Hung hang
+Air pollution|O nhiem khong khi
+Airplane|May bay
+Airport|San bay
 Algorithm|Thuat toan
 Analyze|Phan tich
+Animal|Dong vat
 Animation|Hoat hinh
+Annoyed|Kho chiu, buc minh
+Anxious|Lo lang, bat an
 API|Giao dien lap trinh ung dung
+Appetizer|Mon khai vi
+Apple|Tao
 Application|Ung dung
+Architect|Kien truc su
 Architecture|Kien truc
 Argument|Doi so (Lap trinh)
 Array|Mang (Lap trinh)
+Arrival|Su den noi
+Arrogant|Kieu ngao
 Artificial Intelligence|Tri tue nhan tao
+Artist|Hoa si, nghe si
+Asparagus|Mang tay
 Assembly|Ngon ngu bac thap
 Asset|Tai san
 Assignment|Bai tap, phep gan
+Assistant|Tro ly
+Attendance|Su chuyen can
+Aunt|Co, di
+Autumn|Mua thu
 Available|Co san
 Average|Trung binh
 Avoid|Tranh khoi
 Background|Nen tang, ly lich
+Backpack|Ba lo
 Backup|Sao luu
+Baggage claim|Khu nhan hanh ly
+Baker|Tho lam banh
 Balance|Can bang
+Banana|Chuoi
 Bandwidth|Bang thong
+Banker|Nhan vien ngan hang
+Barber|Tho cat toc nam
 Base|Co so, nen tang
 Basic|Co ban
+Bathrobe|Ao choang tam
 Battery|Pin
+Bean|Dau
+Bear|Gau
+Beef|Thit bo
+Beetroot|Cu den
+Beige|Mau be
+Bell pepper|Ot chuong
+Belt|That lung
 Benefit|Loi ich
+Bicycle|Xe dap
 Binary|Nhi phan
+Biodiversity|Da dang sinh hoc
 Biology|Sinh hoc
 Bit|Don vi du lieu
+Bitter|Dang
+Black|Mau den
+Blackboard|Bang den
 Blank|Trang, trong
+Blizzard|Bao tuyet
 Block|Khoi
+Blouse|Ao so mi nu
+Blue|Mau xanh duong
+Blueberry|Viet quat
 Board|Bang, uy ban
+Boarding pass|The len may bay
+Boat|Thuyen
+Bone|Xuong
 Boolean|Kieu logic (Dung/Sai)
+Boots|Ung, bot
 Border|Bien gioi, vien
+Boss|Sep, ong chu
+Bow tie|No deo co nam
+Bra|Ao nguc
+Brain|Nao bo
 Branch|Nhanh
 Brave|Dung cam
+Brave|Dung cam
+Bread|Banh mi
+Breakfast|Bua sang
+Breezy|Co gio nhe
+Bridge|Cay cau
+Briefs|Quan lot nam
 Broadcast|Phat song
+Broccoli|Bong cai xanh
+Brother|Anh, em trai
+Brother-in-law|Anh/em re
+Brown|Mau nau
 Browser|Trinh duyet
+Budget|Ngan sach
+Buffalo|Trau
 Buffer|Bo dem
 Bug|Loi phan mem
 Build|Xay dung
+Bus|Xe buyt
+Businessman|Nam doanh nhan
+Businesswomanz|Nu doanh nhan
 Button|Nut bam
+Cabbage|Bap cai
 Calculate|Tinh toan
 Camera|May anh
 Campaign|Chien dich
 Cancel|Huy bo
+Cap|Mu luoi trai
 Capacity|Dung luong, suc chua
 Capital|Thu do, tien von
 Capture|Chop lay, bat giu
+Car|Xe o to
+Carbon footprint|Dau chan carbon
+Career|Su nghiep
 Careful|Can than
+Carpenter|Tho moc
+Carrot|Ca rot
+Casual wear|Trang phuc thuong ngay
+Cat|Meo
 Category|The loai
+Cauliflower|Sup lo trang
 Celebrate|An mung
+Celery|Can tay
 Center|Trung tam
 Century|The ky
+CEO|Tong giam doc
 Ceremony|Buoi le
+Chair|Ghe
 Challenge|Thach thuc
 Change|Thay doi
 Character|Ky tu, Nhan vat
@@ -570,7 +157,12 @@ Charge|Sac pin, tinh phi
 Charity|Tu thien
 Chat|Tro chuyen
 Check|Kiem tra
+Cheerful|Vui ve, tuoi tan
+Chef|Dau bep
 Chemistry|Hoa hoc
+Chicken|Ga
+Chili|Ot cay
+Chilly|Lanh
 Choice|Su lua chon
 Circle|Hinh tron
 Circuit|Mach dien
@@ -578,13 +170,23 @@ Citizen|Cong dan
 City|Thanh pho
 Class|Lop hoc, Lop (Lap trinh)
 Classic|Kinh dien
+Classroom|Lop hoc
 Clean|Sach se
 Clear|Ro rang
 Client|May khach, khach hang
+Climate|Khi hau
+Climate|Khi hau
+Clothes|Quan ao
+Clothing|Quan ao (noi chung)
+Cloud|Dam may
 Cloud computing|Dien toan dam may
+Cloudy|Nhieu may
+Coat|Ao khoac dai
 Code|Ma nguon
+Cold|Lanh
 Collect|Thu thap
 College|Truong cao dang
+Color|Mau sac
 Color|Mau sac
 Column|Cot
 Combine|Ket hop
@@ -607,32 +209,47 @@ Computer|May tinh
 Concept|Khai niem
 Condition|Dieu kien
 Conference|Hoi nghi
+Confident|Tu tin
+Confused|Boi roi
 Connect|Ket noi
 Connection|Su ket noi
+Conservation|Su bao ton
 Constant|Hang so
 Construction|Xay dung
+Consultant|Co van
 Contact|Lien lac
 Context|Ngu cho
 Control|Dieu khien
 Copy|Sao chep
+Coral|Mau san ho
 Core|Loi, trung tam
+Corn|Ngo, bap
 Cost|Chi phi
 Count|Dem
 Country|Quoc gia
 Course|Khoa hoc
+Cousin|Anh/chi/em ho
+Cow|Bo
 Create|Tao ra
+Creative|Sang tao
 Credit|Tin dung
 Crime|Toi pham
 Crisis|Khung hoang
+Crosswalk|Vach sang duong
+Cucumber|Dua chuot
+Cuisine|Am thuc
 Culture|Van hoa
+Currency|Tien te
 Current|Hien tai
 Customer|Khach hang
+Cyan|Mau xanh lo
 Cybersecurity|An ninh mang
 Daily|Hang ngay
 Damage|Thiet hai
 Data|Du lieu
 Database|Co so du lieu
 Date|Ngay thang
+Daughter|Con gai
 Dead|Chet
 Deal|Thoa thuan
 Debug|Go loi
@@ -645,16 +262,26 @@ Deep|Sau
 Default|Mac dinh
 Defect|Loi, khuyet diem
 Define|Dinh nghia
+Deforestation|Nan pha rung
 Degree|Bang cap, nhiet do
 Delay|Tri hoan
 Delete|Xoa
+Delicious|Ngon
 Deliver|Giao hang
 Demand|Nhu cau
+Dentist|Nha si
 Department|Phong ban
+Departure|Su khoi hanh
 Depend|Phu thuoc
 Deploy|Trien khai
+Depressed|Chan nan, tram cam
+Describe|Mo ta
 Design|Thiet ke
+Designer|Nha thiet ke
+Desk|Ban hoc
 Desktop|Man hinh chinh
+Dessert|Mon trang mieng
+Destination|Diem den
 Detail|Chi tiet
 Detect|Phat hien
 Develop|Phat trien
@@ -664,51 +291,86 @@ Dictionary|Tu dien
 Difference|Su khac biet
 Difficult|Kho khan
 Digital|Ky thuat so
+Dinner|Bua toi
+Diploma|Bang tot nghiep
 Direction|Phuong huong
+Director|Giam doc
 Directory|Thu muc
 Disable|Vo hieu hoa
+Disappointed|That vong
 Discover|Kham pha
 Discuss|Thao luan
+Disease|Benh tat
+Dish|Mon an
 Display|Hien thi
 Distance|Khoang cach
 Divide|Chia
+Doctor|Bac si
 Document|Tai lieu
+Dog|Cho
+Dolphin|Ca heo
 Domain|Ten mien
 Download|Tai xuong
+Downpour|Mua lon, mua nhu trut
+Dress|Vay lien
 Drive|Lai xe, O dia
+Driver|Tai xe
+Drizzle|Mua phun
 Drop|Roi, xoa bo
+Drought|Han han
+Drought|Han han
+Duck|Vit
 Dynamic|Dong, linh hoat
 Early|Som
 Earn|Kiem duoc
 Earth|Trai dat
+Earthquake|Dong dat
 Easy|De dang
 Economy|Kinh te
+Ecosystem|He sinh thai
 Edge|Canh, ria
 Edit|Chinh sua
 Education|Giao duc
 Effect|Hieu ung
 Efficiency|Hieu suat
 Effort|No luc
+Egg|Trung
+Eggplant|Ca tim
+Electrician|Tho dien
 Element|Phan tu
+Elephant|Voi
 Email|Thu dien tu
+Embarrassed|Xau ho, nguong ngung
 Embed|Nhung (code)
+Emergency|Khan cap
 Emotion|Cam xuc
 Employ|Thue muon
+Employee|Nhan vien
+Employer|Nha tuyen dung
 Empty|Trong rong
 Enable|Kich hoat
 Encrypt|Ma hoa
+Endangered species|Cac loai co nguy co tuyet chung
 Energy|Nang luong
 Engine|Dong co
+Engineer|Ky su
+Entrepreneur|Doanh nhan
+Envious|Do ky
+Environment|Moi truong
 Environment|Moi truong
 Equal|Bang nhau
 Error|Loi
 Event|Su kien
+Exam|Ky thi
 Exception|Ngoai le
+Excited|Hao hung
 Execute|Thuc thi
+Exercise|Tap the duc
 Exit|Thoat
 Expect|Mong doi
 Experience|Kinh nghiem
 Expert|Chuyen gia
+Explain|Giai thich
 Export|Xuat khau, xuat file
 Expression|Bieu thuc
 Extension|Tien ich mo rong
@@ -718,8 +380,13 @@ Fail|That bai
 Fake|Gia mao
 False|Sai
 Familiar|Quen thuoc
+Family|Gia dinh
 Famous|Noi tieng
+Father|Bo, cha
+Father-in-law|Bo chong/bo vo
+Fearful|So hai
 Feature|Tinh nang
+Ferry|Pha
 Fetch|Lay du lieu
 Field|Truong du lieu, canh dong
 File|Tap tin
@@ -727,79 +394,149 @@ Filter|Bo loc
 Final|Cuoi cung
 Find|Tim kiem
 Finish|Ket thuc
+Firefighter|Linh cuu hoa
 Firewall|Tuong lua
 Firmware|Phan mem he thong
+Fish|Ca
 Fix|Sua chua
 Flag|Co, danh dau
+Flight|Chuyen bay
+Flight attendant|Tiep vien hang khong
+Flip-flops|Dep tong
 Float|So thuc
+Flood|Lu lut
 Flow|Dong chay
+Fog|Suong mu
+Foggy|Nhieu suong mu
 Folder|Thu muc
 Font|Phom chu
+Food|Thuc an
 Force|Luc luong, ep buoc
+Forecast|Du bao thoi tiet
+Formal wear|Trang phuc trang trong
 Format|Dinh dang
+Fossil fuel|Nhien lieu hoa thach
+Fox|Cao
 Framework|Khung lam viec
 Free|Mien phi
+Freelancer|Nguoi lam viec tu do
+Freezing|Ret buot
 Frequent|Thuong xuyen
+Friendly|Than thien
 Front|Phat hien
+Fruit|Trai cay, hoa qua
+Frustrated|Buc boi, nan long
 Function|Ham (Lap trinh)
 Fund|Quy
 Future|Tuong lai
 Game|Tro choi
+Garlic|Toi
+Garment|Trang phuc, ao quan
 Gateway|Cong mang
 Gather|Thu thap
 General|Chung
 Generate|Tao ra
 Generation|The he
+Generous|Hao phong
+Ginger|Gung
+Giraffe|Huou cao co
 Global|Toan cau
+Global warming|Su nong len toan cau
+Gloves|Gang tay
 Goal|Muc tieu
+Goat|De
+Gold|Vang
+Goose|Ngong
+Gown|Vay da hoi
+Grade|Lop, diem so
+Granddaughter|Chau gai (noi/ngoai)
+Grandfather|Ong
+Grandmother|Ba
+Grandparents|Ong ba
+Grandson|Chau trai (noi/ngoai)
+Grape|Nho
 Graph|Do thi
 Graphic|Do hoa
+Grateful|Biet on
+Gray|Mau xam
+Green|Mau xanh la cay
+Greenhouse effect|Hieu ung nha kinh
 Grid|Luoi
 Group|Nhom
 Growth|Su phat trien
 Guess|Doan
 Guide|Huong dan
+Guidebook|Sach huong dan
+Guilty|Cam thay co loi
 Habit|Thoi quen
+Habitat|Moi truong song
+Hail|Mua da
+Hairdresser|Tho lam toc nu
 Half|Mot nua
+Hamster|Chuot hamster
 Handle|Xu ly
+Happy|Hanh phuc, vui ve
 Hardware|Phan cung
+Hardworking|Cham chi
 Hash|Bam du lieu
+Hat|Mu rong vanh
 Header|Tieu de
+Health|Suc khoe
 Health|Suc khoe
 Heap|Vung nho Heap
 Heart|Trai tim
+Heart|Trai tim
+Heatwave|Dot nang nong
 Height|Chieu cao
 Help|Giup do
 Hidden|An
+High heels|Giay cao got
+Highway|Duong cao toc
 History|Lich su
 Hold|Giu
 Home|Nha
+Homework|Bai tap ve nha
+Honest|Trung thuc
 Hope|Hy vong
+Hopeful|Hy vong
+Horse|Ngua
 Host|May chu
+Hostel|Nha tro
+Hotel|Khach san
 Hour|Gio
 Huge|To lon
 Human|Con nguoi
+Humble|Khiem ton
+Humid|Am uot
+Humidity|Do am
+Hurricane|Bao lon (o Dai Tay Duong)
+Husband|Chong
 Idea|Y tuong
 Identify|Nhan dang
 Ignore|Bo qua
 Image|Hinh anh
 Impact|Tac dong
+Impatient|Nong nay, thieu kien nhan
 Implement|Trien khai, thuc hien
 Import|Nhap khau, nhap vao
 Important|Quan trong
 Improve|Cai thien
+In-laws|Gia dinh ben chong/vo
 Include|Bao gom
 Income|Thu nhap
 Increase|Tang
 Index|Chi muc
 Industry|Cong nghiep
+Infection|Nhiem trung
 Information|Thong tin
+Ingredient|Nguyen lieu
 Inherit|Thua ke
 Initial|Ban dau
 Input|Dau vao
 Insert|Chen vao
 Install|Cai dat
 Instance|Doi tuong the hien
+Insurance|Bao hiem
 Integer|So nguyen
 Integrate|Tich hop
 Intelligence|Tri thong minh
@@ -807,34 +544,59 @@ Interface|Giao dien
 Internal|Ben trong
 Internet|Mang internet
 Interrupt|Ngat quang
+Intersection|Nga tu, giao lo
 Interview|Phong van
 Invest|Dau tu
 Issue|Van de
+IT specialist|Chuyen gia CNTT
 Item|Vat pham
+Itinerary|Lich trinh
+Jacket|Ao khoac ngan
+Jealous|Ghen ti
+Jeans|Quan bo
+Job|Cong viec, nghe nghiep
 Join|Tham gia, ket noi
+Journalist|Nha bao
+Journey|Hanh trinh
+Joyful|Vui suong
+Judge|Tham phan
 Jump|Nhay
 Kernel|Loi he dieu hanh
 Key|Khoa, phim
 Keyboard|Ban phim
 Keyword|Tu khoa
+Kind|Tot bung, tu te
 Knowledge|Kien thuc
 Label|Nhan
+Laboratory|Phong thi nghiem
+Landmark|Danh lam thang canh
 Language|Ngon ngu
 Large|Lon
 Late|Tre
+Lavender|Mau tim nhat
+Lawyer|Luat su
 Layer|Lop
 Layout|Bo cuc
+Lazy|Luoi bieng
 Leader|Lanh dao
 Learn|Hoc
 Leave|Roi di
 Left|Ben trai
+Leggings|Quan legging
+Lemon|Chanh vang
 Length|Chieu dai
+Lesson|Bai hoc
+Lettuce|Rau xa lach
 Level|Cap do
 Library|Thu vien
+Library|Thu vien
 License|Giay phep
+Lightning|Tia chop
+Lime|Chanh xanh
 Limit|Gioi han
 Line|Dong
 Link|Lien ket
+Lion|Su tu
 List|Danh sach
 Listen|Nghe
 Load|Tai len
@@ -844,16 +606,26 @@ Lock|Khoa
 Log|Nhat ky he thong
 Logic|Logic
 Login|Dang nhap
+Lonely|Co don
 Loop|Vong lap
+Loving|Day yeu thuong
+Luggage|Hanh ly
+Lunch|Bua trua
 Machine|May moc
 Macro|Lenh vi mo
+Magenta|Mau do tuoi
 Main|Chinh
+Main course|Mon chinh
 Maintain|Bao tri
 Major|Chuyen nganh, lon
 Manage|Quan ly
+Manager|Quan ly
+Mango|Xoai
+Map|Ban do
 Map|Ban do
 Margin|Le
 Market|Thi truong
+Maroon|Mau do nau
 Master|Bac thay, nhanh chinh
 Match|Phu hop, tran dau
 Material|Vat lieu
@@ -861,9 +633,13 @@ Math|Toan hoc
 Matrix|Ma tran
 Matter|Van de
 Maximum|Toi da
+Meal|Bua an
 Meaning|Y nghia
 Measure|Do luong
+Meat|Thit
+Mechanic|Tho sua may
 Media|Truyen thong
+Medicine|Thuoc
 Memory|Bo nho
 Menu|Thuc don
 Merge|Gop, tron
@@ -874,100 +650,159 @@ Minimum|Toi thieu
 Minute|Phut
 Mirror|Guong
 Miss|Bo lo
+Mist|Suong mu nhe
 Mobile|Di dong
 Mode|Che do
 Model|Mo hinh
+Model|Nguoi mau
 Modern|Hien dai
 Module|Hoc phan, mo-dun
 Moment|Khoanh khac
 Monitor|Man hinh, giam sat
+Monkey|Khi
 Month|Thang
+Moody|Tinh khi that thuong
 Morning|Buoi sang
+Mother|Me
+Mother-in-law|Me chong/me vo
 Motion|Chuyen dong
+Motorcycle|Xe may
 Mouse|Chuot (may tinh)
+Mouse|Chuot
 Move|Di chuyen
 Multiple|Nhieu
+Muscle|Co bap
+Mushroom|Nam
 Music|Am nhac
+Musician|Nhac si
 Name|Ten
 National|Quoc gia
 Native|Ban dia
 Natural|Tu nhien
+Natural disaster|Tham hoa thien nhien
+Nature|Thien nhien
 Navigate|Dieu huong
+Navy|Mau xanh nuoc bien dam
+Nephew|Chau trai
+Nervous|Lo lang, bon chon
 Network|Mang luoi
 News|Tin tuc
+Niece|Chau gai
 Node|Diem nut
 Noise|Tieng on
+Noodles|Mi, bun, pho
 Normal|Binh thuong
 Note|Ghi chu
+Notebook|Vo, so ghi chep
 Notice|Thong bao
 Null|Rong, khong co gia tri
 Number|Con so
+Nurse|Y ta
+Nutrition|Dinh duong
 Object|Doi tuong
 Observe|Quan sat
 Obtain|Dat duoc
+Occupation|Nghe nghiep
 Occur|Xay ra
 Offer|De nghi
 Office|Van phong
-Offset|Do lech
 Offline|Ngoai tuyen
+Offset|Do lech
+Olive|Mau xanh o liu
+Onion|Hanh tay
 Online|Truc tuyen
 Open|Mo
 Operate|Hoat dong
 Operator|Toan tu
 Opinion|Y kien
+Optimistic|Lac quan
 Option|Tung chon
+Orange|Mau cam, cam
 Order|Thu tu, don hang
 Origin|Nguon goc
+Outfit|Trang phuc
 Output|Dau ra
 Outside|Ben ngoai
 Over|Vuot qua
+Overcast|U am, am u
 Override|Ghi de
 Owner|Chu so huu
 Package|Goi phan mem
 Page|Trang
 Paint|Son, ve
+Pajamas|Do ngu
 Panel|Bang dieu khien
+Panties|Quan lot nu
+Pants|Quan (Anh-My)
 Parameter|Tham so
 Parent|Lop cha, phu huynh
+Parents|Bo me
+Parking lot|Bai do xe
 Parse|Phan tich cu phap
 Part|Phan
 Partner|Doi tac
 Party|Bua tiec
 Pass|Vượt qua
+Passport|Ho chieu
 Password|Mat khau
 Paste|Dan
 Path|Duong dan
+Patient|Kien nhan
 Pattern|Mau, kieu
 Pause|Tam dung
+Pavement|Via he (Anh-Anh)
 Pay|Tra tien
+Pea|Dau Ha Lan
 Peace|Hoa binh
+Peach|Dao, Mau dao
+Pedestrian|Nguoi di bo
+Pen|But muc
+Pencil|But chi
 People|Con nguoi
 Perform|Thuc hien
 Performance|Hieu suat
 Period|Thoi ky
 Permission|Quyen phep
 Person|Nguoi
+Pessimistic|Bi quan
+Pet|Thu cung
+Pharmacist|Duoc si
 Phase|Giai doan
 Phone|Dien thoai
 Photo|Buc anh
+Photographer|Nhiep anh gia
 Physical|Vat ly
 Pick|Chon
 Picture|Buc tranh
 Piece|Manh
+Pig|Lon
+Pilot|Phi cong
+Pineapple|Dua, thom
+Pink|Mau hong
 Place|Dia diem
 Plan|Ke hoach
 Plant|Thuc vat
+Plastic waste|Rac thai nhua
 Platform|Nen tang
 Play|Choi
+Playground|San choi
 Plugin|Trinh cam them
+Plum|Man
+Plumber|Tho sua ong nuoc
 Point|Diem
 Pointer|Con tro (Lap trinh)
+Police officer|Canh sat
 Policy|Chinh sach
+Polite|Lich su
+Pollution|O nhiem
+Polo shirt|Ao polo
+Pork|Thit heo
 Port|Cong ket noi
 Position|Vi tri
 Positive|Tich cuc
 Possible|Co the
 Post|Bai dang
+Potato|Khoai tay
 Power|Nang luong, quyen luc
 Practice|Thuc hanh
 Predict|Du doan
@@ -977,24 +812,30 @@ Press|Nhan, an
 Prevent|Ngan chan
 Price|Gia ca
 Primary|Chinh, so cap
+Principal|Hieu truong
 Print|In an
 Private|Rieng tu
 Problem|Van de
 Process|Tien trinh
 Product|San pham
+Professor|Giao su
 Profile|Ho so
 Program|Chuong trinh
+Programmer|Lap trinh vien
 Progress|Tien do
 Project|Du an
 Promise|Loi hua
 Property|Thuoc tinh
 Protect|Bao ve
 Protocol|Giao thuc
+Proud|Tu hao
 Prove|Chung minh
 Provide|Cung cap
 Public|Cong cong
 Publish|Xuat ban
 Pull|Keo
+Pumpkin|Bi ngo
+Purple|Mau tim
 Push|Day
 Put|Dat, de
 Quality|Chat luong
@@ -1004,31 +845,47 @@ Queue|Hang doi
 Quick|Nhanh chong
 Quiet|Yen tinh
 Quote|Trich dan
+Rabbit|Tho
 Radio|Dai phat thanh
+Radish|Cu cai do
+Rain|Mua
+Raincoat|Ao mua
+Rainy|Co mua
 Random|Ngau nhien
 Range|Pham vi
+Raspberry|Mam xoi
+Rat|Chuot cong
 Rate|Ty le
 Reach|Dat toi
 Read|Doc
 Ready|San sang
 Real|Thuc te
+Real estate agent|Nhan vien moi gioi bat dong san
 Reason|Ly do
 Receive|Nhan
 Recent|Gan day
+Recess|Gio giai lao
+Recommend|De xuat
 Record|Ban ghi
 Recover|Khoi phuc
+Recovery|Hoi phuc
+Recycling|Tai che
+Red|Mau do
 Reference|Tham chieu
 Region|Khu vuc
 Register|Dang ky
 Regular|Deu dan
 Reject|Tu choi
 Relation|Moi quan he
+Relaxed|Thu gian
 Release|Phat hanh
+Reliable|Dang tin cay
 Reliable|Dang tin cay
 Remember|Nho
 Remote|Tu xa
 Remove|Gỡ bo
 Render|Ket xuat
+Renewable energy|Nang luong tai tao
 Repair|Sua chua
 Repeat|Lap lai
 Replace|Thay the
@@ -1037,43 +894,64 @@ Report|Bao cao
 Request|Yeu cau
 Require|Doi hoi
 Research|Nghien cuu
+Researcher|Nha nghien cuu
 Reset|Dat lai
 Resolve|Giai quyet
+Resort|Khu nghi duong
 Resource|Tai nguyen
 Respond|Phan hoi
 Response|Cau tra loi
+Responsible|Co trach nhiem
 Restart|Khoi dong lai
 Result|Ket qua
 Return|Tra ve
 Review|Danh gia
+Rice|Com, gao
 Right|Ben phai, dung
 Risk|Rui ro
+Road|Con duong
 Role|Vai tro
 Rollback|Hoan tac
 Root|Goc
+Roundabout|Bung binh
 Route|Tuyen duong
 Row|Hang
+Rude|Tho lo, bat lich su
 Rule|Quy tac
 Run|Chay
 Safe|An toan
+Salad|Salad, rau tron
+Salty|Man
+Sandals|Dep xang dan
+Satisfied|Hai long
 Save|Luu lai
 Scale|Quy mo, ty le
 Scan|Quet
+Scarf|Khan quang co
 Scene|Canh
 Schedule|Lich trinh
+Scholarship|Hoc bong
+School|Truong hoc
 Science|Khoa hoc
+Scientist|Nha khoa hoc
 Scope|Pham vi
+Score|Diem so
 Screen|Man hinh
 Script|Kich ban, ma lenh
 Scroll|Cuon
+Seafood|Hai san
 Search|Tim kiem
 Season|Mua
+Season|Mua
+Seatbelt|Day an toan
 Second|Giay (thoi gian)
 Secret|Bi mat
+Secretary|Thu ky
 Section|Phan, doan
 Secure|Bao mat
 Security|An ninh
 Select|Chon
+Selfish|Ich ky
 Send|Gui
 Sense|Giac quan
 Server|May chu
@@ -1085,43 +963,75 @@ Setup|Thiet lap
 Shadow|Bong ram
 Shape|Hinh dang
 Share|Chia se
+Shark|Ca map
+Sheep|Cuu
 Shift|Ca lam viec, Dịch chuyen
+Shirt|Ao so mi
+Shocked|Soc, kinh ngac
+Shoes|Giay
 Shop|Cua hang
 Short|Ngan
+Shorts|Quan dui
 Show|Hien thi
+Shower|Mua rao
+Shy|Nhut nhat, e then
+Sibling|Anh chi em ruot
 Side|Canh, phia
+Sidewalk|Via he (Anh-My)
+Sightseeing|Tham quan
 Sign|Ky ten, dau hieu
 Signal|Tin hieu
 Signature|Chu ky
 Significant|Quan trong
 Silence|Im lang
+Silver|Mau bac
 Similar|Tuong tu
 Simple|Don gian
 Single|Don
+Sister|Chi, em gai
+Sister-in-law|Chi/em dau
 Site|Trang web, vi tri
 Size|Kich thuoc
 Skill|Ky nang
+Skirt|Chan vay
 Sleep|Ngu
 Slide|Truot
 Small|Nho
 Smart|Thong minh
 Smile|Cuoi
+Snack|Do an nhe
+Snake|Ran
+Sneakers|Giay the thao
+Snow|Tuyet
+Snowy|Co tuyet
 Social|Xa hoi
+Socks|Tat, vo
 Software|Phan mem
+Soil pollution|O nhiem dat
+Solar energy|Nang luong mat troi
+Soldier|Linh, quan nhan
 Solution|Giai phap
 Solve|Giai quyet
+Son|Con trai
 Sort|Sap xep
 Sound|Am thanh
+Soup|Sup, canh
+Sour|Chua
 Source|Nguon
+Souvenir|Luu niem
 Space|Khong gian
 Speak|Noi
 Special|Dac biet
 Specific|Cu the
 Speed|Toc do
+Speed limit|Gioi han toc do
 Spell|Danh van
 Spend|Tieu xai
+Spicy|Cay
+Spinach|Rau chan vit
 Split|Chia cat
 Sport|The thao
+Spring|Mua xuan
 Spring|Mua xuan
 Stack|Ngan xep
 Stage|Giai doan
@@ -1134,72 +1044,135 @@ Static|Tinh
 Station|Nha ga
 Status|Trang thai
 Step|Buoc
+Stepdaughter|Con gai rieng cua vo/chong
+Stepfather|Bo duong
+Stepmother|Me ke
+Stepson|Con trai rieng cua vo/chong
+Stockings|Tat dai
+Stomach|Da day
 Stop|Dung lai
 Storage|Luu tru
 Store|Cua hang, luu tru
+Storm|Bao
+Stormy|Co bao
 Story|Cau chuyen
+Strawberry|Dau tay
 Stream|Dong du lieu
 Street|Con duong
+Street|Duong pho
 String|Chuoi ky tu
 Strong|Manh me
 Structure|Cau truc
+Stubborn|Cung dau, buong binh
 Student|Sinh vien
+Student|Hoc sinh
 Study|Hoc tap
 Style|Phong cach
 Subject|Chu de
+Subject|Mon hoc
 Submit|Nop
+Subway|Tau dien ngam (Anh-My)
 Success|Thanh cong
 Sudden|Dot ngot
 Suggest|Goi y
+Suit|Bo vest
 Summary|Tom tat
 Summer|Mua he
+Summer|Mua he
+Sunglasses|Kinh ram
+Sunny|Nang, troi nang
+Sunshine|Anh nang
+SunSun|Mat troi
 Support|Ho tro
 Surface|Be mat
+Surgeon|Bac si phau thuat
+Surgery|Phau thuat
+Sustainable|Ben vung
+Sweater|Ao co mu trum
+Sweet|Ngot
+Sweet potato|Khoai lang
 Switch|Chuyen doi
 Symbol|Bieu tuong
+Symptom|Trieu chung
 Sync|Dong bo
 Syntax|Cu phap
 System|He thong
+T-shirt|Ao thun
 Table|Bang
 Tag|The
 Take|Lay
 Talk|Noi chuyen
+Tank top|Ao ba lo
 Target|Muc tieu
 Task|Nhiem vu
+Taxi|Xe taxi
 Teacher|Giao vien
+Teacher|Giao vien
+Teacher|Giao vien
+Teal|Mau xanh mong ket
 Team|Doi, nhom
 Technology|Cong nghe
+Temperature|Nhiet do
 Template|Mau
 Term|Thuat ngu
 Test|Kiem tra
+Test|Bai kiem tra
 Text|Van ban
 Theme|Chu de
 Theory|Ly thuyet
 Think|Suy nghi
 Thread|Luong (Lap trinh)
+Thunder|Sam
+Thunderstorm|Giong bao
+Ticket|Ve
+Tie|Ca vat
+Tiger|Ho
 Time|Thoi gian
+Tired|Met moi
 Title|Tieu de
 Token|Ma thong bao
+Tomato|Ca chua
 Tool|Cong cu
 Top|Dinh, phia tren
 Topic|Chu de
+Tornado|Loc xoay
 Total|Tong cong
 Touch|Cham
+Tourist|Khach du lich
+Tourist attraction|Diem thu hut du lich
 Track|Theo doi
 Trade|Thuong mai
 Traffic|Giao thong, luu luong
+Traffic|Giao thong
+Traffic jam|Tac duong
+Traffic light|Den giao thong
 Train|Dao tao, tau hoa
+Train|Tau hoa
 Transaction|Giao dich
 Translate|Dich
 Transport|Giao thong van tai
+Travel|Du lich, di du lich
+Treatment|Dieu tri
 Tree|Cay
 Trigger|Kich hoat
+Trip|Chuyen di
+Trousers|Quan dai
 True|Dung
 Trust|Tin tuong
 Try|Thu
+Tunnel|Duong ham
 Turn|Xoay, luot
+Turquoise|Mau xanh ngoc
+Turtle|Rua
+Tuxedo|Bo le phuc nam
 Type|Kieu du lieu
+Typhoon|Bao nhiet doi (o Thai Binh Duong)
+Uncle|Chu, bac, cau
+Underground|Tau dien ngam (Anh-Anh)
+Underwear|Do lot
 Undo|Hoan tac
+Uniform|Dong phuc
+Uniform|Dong phuc
 Union|Lien hiep
 Unique|Doc nhat
 Unit|Don vi
@@ -1210,44 +1183,71 @@ Upload|Tai len
 Url|Duong dan web
 Use|Su dung
 User|Nguoi dung
+Vacation|Ky nghi
 Valid|Hop le
 Value|Gia tri
 Variable|Bien so
 Vector|Vector
+Vegetable|Rau cu
+Vegetable|Rau cu
+Vehicle|Phuong tien giao thong
 Verify|Xac minh
 Version|Phien ban
 Video|Video
 View|Che do xem
 Virtual|Ao
+Visa|Thi thuc
 Vision|Tam nhin
 Visit|Chuyen tham
 Voice|Giong noi
 Volume|Am luong
 Wait|Cho doi
+Waiter|Boi ban nam
+Waitress|Boi ban nu
 Walk|Di bo
+Warm|Am ap
 Warning|Canh bao
+Waste|Rac thai
 Watch|Xem
 Water|Nuoc
+Water pollution|O nhiem nuoc
+Watermelon|Dua hau
 Way|Cach thuc
+Weather|Thoi tiet
 Weather|Thoi tiet
 Web|Mang luoi
 Weight|Trong luong
 Welcome|Chao mung
+Whale|Ca voi
 While|Trong khi
 White|Mau trang
+White|Mau trang
+Whiteboard|Bang trang
 Width|Chieu rong
+Wife|Vo
+Wildfire|Chay rung
+Wind|Gio
+Wind power|Nang luong gio
 Window|Cua so
+Windy|Co gio
+Winter|Mua dong
 Winter|Mua dong
 Wire|Day cap
+Wolf|Soi
 Word|Tu vung
 Work|Lam viec
+Work|Cong viec
 World|The gioi
 Write|Viet
+Writer|Nha van
 Wrong|Sai
 Year|Nam
 Yellow|Mau vang
+Yellow|Mau vang
 Yes|Co
 Yield|San luong, nhuong
+Zebra|Ngua van
 Zero|So khong
 Zone|Khu vuc
 Zoom|Phong to
+Zucchini|Bi xanh
