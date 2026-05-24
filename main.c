@@ -210,17 +210,112 @@ int main() {
                 getch(); 
                 break;
 
-            case 4: 
-                printf("\tNhap tu tieng Anh can sua: ");
-                fgets(english, sizeof(english), stdin);
-                removeNewline(english);
-                printf("\tNhap nghia tieng Viet moi: ");
-                fgets(vietnamese, sizeof(vietnamese), stdin);
-                removeNewline(vietnamese);
+            case 4: {
+                /* Khai bao bien o dau block - tuong thich C89 */
+                int inputOK;
+                int attempts;
+                int k;
+                int isEmpty;
+                int hasDigit;
+                int hasSymbol;
+                const int MAX_ATTEMPTS = 3;
+
+                /* ---------- NHAP TU TIENG ANH CAN SUA ---------- */
+                inputOK = 0;
+                attempts = 0;
+
+                while (!inputOK && attempts < MAX_ATTEMPTS) {
+                    attempts++;
+                    printf("\tNhap tu tieng Anh can sua: ");
+                    fgets(english, sizeof(english), stdin);
+                    removeNewline(english);
+
+                    if (!isValidWord(english)) {
+                        setColor(12);
+
+                        /* Phan tich loi cu the */
+                        isEmpty = 1;
+                        for (k = 0; english[k]; k++) {
+                            if (english[k] != ' ' && english[k] != '\t') {
+                                isEmpty = 0;
+                                break;
+                            }
+                        }
+
+                        if (isEmpty) {
+                            printf("\t[LOI] Tu tieng Anh khong duoc de trong.\n");
+                        } else {
+                            hasDigit  = 0;
+                            hasSymbol = 0;
+                            for (k = 0; english[k]; k++) {
+                                if (isdigit((unsigned char)english[k]))
+                                    hasDigit = 1;
+                                else if (!isalpha((unsigned char)english[k]) && english[k] != ' ')
+                                    hasSymbol = 1;
+                            }
+                            if (hasDigit)
+                                printf("\t[LOI] Tu tieng Anh khong duoc chua chu so (0-9).\n");
+                            else if (hasSymbol)
+                                printf("\t[LOI] Tu tieng Anh khong duoc chua ky tu dac biet.\n");
+                            else
+                                printf("\t[LOI] Tu tieng Anh khong hop le.\n");
+                        }
+
+                        if (attempts < MAX_ATTEMPTS)
+                            printf("\tVui long nhap lai (%d lan con lai).\n",
+                                   MAX_ATTEMPTS - attempts);
+                        setColor(7);
+                    } else {
+                        inputOK = 1;
+                    }
+                }
+
+                if (!inputOK) {
+                    setColor(12);
+                    printf("\n\t=> Da vuot qua so lan nhap toi da. Quay lai menu.\n");
+                    setColor(7);
+                    printf("\n\tBam phim bat ky de quay lai menu...");
+                    getch();
+                    break;
+                }
+
+                /* ---------- NHAP NGHIA TIENG VIET MOI ---------- */
+                inputOK = 0;
+                attempts = 0;
+
+                while (!inputOK && attempts < MAX_ATTEMPTS) {
+                    attempts++;
+                    printf("\tNhap nghia tieng Viet moi: ");
+                    fgets(vietnamese, sizeof(vietnamese), stdin);
+                    removeNewline(vietnamese);
+
+                    if (!isValidMeaning(vietnamese)) {
+                        setColor(12);
+                        printf("\t[LOI] Nghia tieng Viet khong duoc de trong hoac chi co khoang trang.\n");
+                        if (attempts < MAX_ATTEMPTS)
+                            printf("\tVui long nhap lai (%d lan con lai).\n",
+                                   MAX_ATTEMPTS - attempts);
+                        setColor(7);
+                    } else {
+                        inputOK = 1;
+                    }
+                }
+
+                if (!inputOK) {
+                    setColor(12);
+                    printf("\n\t=> Da vuot qua so lan nhap toi da. Quay lai menu.\n");
+                    setColor(7);
+                    printf("\n\tBam phim bat ky de quay lai menu...");
+                    getch();
+                    break;
+                }
+
+                /* ---------- THUC HIEN CAP NHAT ---------- */
                 updateMeaning(dictionary, english, vietnamese);
                 printf("\n\tBam phim bat ky de quay lai menu...");
-                getch(); 
+                getch();
                 break;
+            }
 
             case 5: 
                 printf("\tNhap tu tieng Anh can xoa: ");
