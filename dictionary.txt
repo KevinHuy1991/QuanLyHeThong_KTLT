@@ -103,7 +103,6 @@ Bra|Ao nguc
 Brain|Nao bo
 Branch|Nhanh
 Brave|Dung cam
-Brave|Dung cam
 Bread|Banh mi
 Breakfast|Bua sang
 Breezy|Co gio nhe
@@ -175,7 +174,6 @@ Clean|Sach se
 Clear|Ro rang
 Client|May khach, khach hang
 Climate|Khi hau
-Climate|Khi hau
 Clothes|Quan ao
 Clothing|Quan ao (noi chung)
 Cloud|Dam may
@@ -186,7 +184,6 @@ Code|Ma nguon
 Cold|Lanh
 Collect|Thu thap
 College|Truong cao dang
-Color|Mau sac
 Color|Mau sac
 Column|Cot
 Combine|Ket hop
@@ -318,7 +315,6 @@ Driver|Tai xe
 Drizzle|Mua phun
 Drop|Roi, xoa bo
 Drought|Han han
-Drought|Han han
 Duck|Vit
 Dynamic|Dong, linh hoat
 Early|Som
@@ -356,7 +352,6 @@ Engine|Dong co
 Engineer|Ky su
 Entrepreneur|Doanh nhan
 Envious|Do ky
-Environment|Moi truong
 Environment|Moi truong
 Equal|Bang nhau
 Error|Loi
@@ -482,9 +477,7 @@ Hash|Bam du lieu
 Hat|Mu rong vanh
 Header|Tieu de
 Health|Suc khoe
-Health|Suc khoe
 Heap|Vung nho Heap
-Heart|Trai tim
 Heart|Trai tim
 Heatwave|Dot nang nong
 Height|Chieu cao
@@ -589,7 +582,6 @@ Lesson|Bai hoc
 Lettuce|Rau xa lach
 Level|Cap do
 Library|Thu vien
-Library|Thu vien
 License|Giay phep
 Lightning|Tia chop
 Lime|Chanh xanh
@@ -622,7 +614,6 @@ Manage|Quan ly
 Manager|Quan ly
 Mango|Xoai
 Map|Ban do
-Map|Ban do
 Margin|Le
 Market|Thi truong
 Maroon|Mau do nau
@@ -653,7 +644,6 @@ Miss|Bo lo
 Mist|Suong mu nhe
 Mobile|Di dong
 Mode|Che do
-Model|Mo hinh
 Model|Nguoi mau
 Modern|Hien dai
 Module|Hoc phan, mo-dun
@@ -667,7 +657,6 @@ Mother|Me
 Mother-in-law|Me chong/me vo
 Motion|Chuyen dong
 Motorcycle|Xe may
-Mouse|Chuot (may tinh)
 Mouse|Chuot
 Move|Di chuyen
 Multiple|Nhieu
@@ -880,7 +869,6 @@ Relation|Moi quan he
 Relaxed|Thu gian
 Release|Phat hanh
 Reliable|Dang tin cay
-Reliable|Dang tin cay
 Remember|Nho
 Remote|Tu xa
 Remove|Gỡ bo
@@ -941,7 +929,6 @@ Script|Kich ban, ma lenh
 Scroll|Cuon
 Seafood|Hai san
 Search|Tim kiem
-Season|Mua
 Season|Mua
 Seatbelt|Day an toan
 Second|Giay (thoi gian)
@@ -1032,7 +1019,6 @@ Spinach|Rau chan vit
 Split|Chia cat
 Sport|The thao
 Spring|Mua xuan
-Spring|Mua xuan
 Stack|Ngan xep
 Stage|Giai doan
 Standard|Tieu chuan
@@ -1058,17 +1044,14 @@ Stormy|Co bao
 Story|Cau chuyen
 Strawberry|Dau tay
 Stream|Dong du lieu
-Street|Con duong
 Street|Duong pho
 String|Chuoi ky tu
 Strong|Manh me
 Structure|Cau truc
 Stubborn|Cung dau, buong binh
-Student|Sinh vien
 Student|Hoc sinh
 Study|Hoc tap
 Style|Phong cach
-Subject|Chu de
 Subject|Mon hoc
 Submit|Nop
 Subway|Tau dien ngam (Anh-My)
@@ -1077,7 +1060,6 @@ Sudden|Dot ngot
 Suggest|Goi y
 Suit|Bo vest
 Summary|Tom tat
-Summer|Mua he
 Summer|Mua he
 Sunglasses|Kinh ram
 Sunny|Nang, troi nang
@@ -1107,15 +1089,12 @@ Target|Muc tieu
 Task|Nhiem vu
 Taxi|Xe taxi
 Teacher|Giao vien
-Teacher|Giao vien
-Teacher|Giao vien
 Teal|Mau xanh mong ket
 Team|Doi, nhom
 Technology|Cong nghe
 Temperature|Nhiet do
 Template|Mau
 Term|Thuat ngu
-Test|Kiem tra
 Test|Bai kiem tra
 Text|Van ban
 Theme|Chu de
@@ -1142,11 +1121,9 @@ Tourist|Khach du lich
 Tourist attraction|Diem thu hut du lich
 Track|Theo doi
 Trade|Thuong mai
-Traffic|Giao thong, luu luong
 Traffic|Giao thong
 Traffic jam|Tac duong
 Traffic light|Den giao thong
-Train|Dao tao, tau hoa
 Train|Tau hoa
 Transaction|Giao dich
 Translate|Dich
@@ -1172,7 +1149,6 @@ Underground|Tau dien ngam (Anh-Anh)
 Underwear|Do lot
 Undo|Hoan tac
 Uniform|Dong phuc
-Uniform|Dong phuc
 Union|Lien hiep
 Unique|Doc nhat
 Unit|Don vi
@@ -1188,7 +1164,6 @@ Valid|Hop le
 Value|Gia tri
 Variable|Bien so
 Vector|Vector
-Vegetable|Rau cu
 Vegetable|Rau cu
 Vehicle|Phuong tien giao thong
 Verify|Xac minh
@@ -1214,13 +1189,11 @@ Water pollution|O nhiem nuoc
 Watermelon|Dua hau
 Way|Cach thuc
 Weather|Thoi tiet
-Weather|Thoi tiet
 Web|Mang luoi
 Weight|Trong luong
 Welcome|Chao mung
 Whale|Ca voi
 While|Trong khi
-White|Mau trang
 White|Mau trang
 Whiteboard|Bang trang
 Width|Chieu rong
@@ -1231,18 +1204,15 @@ Wind power|Nang luong gio
 Window|Cua so
 Windy|Co gio
 Winter|Mua dong
-Winter|Mua dong
 Wire|Day cap
 Wolf|Soi
 Word|Tu vung
-Work|Lam viec
 Work|Cong viec
 World|The gioi
 Write|Viet
 Writer|Nha van
 Wrong|Sai
 Year|Nam
-Yellow|Mau vang
 Yellow|Mau vang
 Yes|Co
 Yield|San luong, nhuong

@@ -50,15 +50,150 @@ void removeNewline(char* str) {
     str[strcspn(str, "\n")] = 0;
 }
 
-//  them tu moi vao danh sach[cite: 1]
-void addWord(Node** head, char* english, char* vietnamese) {
-    Node* newNode = (Node*)malloc(sizeof(Node));
-    if (newNode == NULL) return; // Ktra cap phat bo nho dong[cite: 1]
+// ============================================================
+//  HAM KIEM TRA DU LIEU DAU VAO TRUOC KHI THEM TU
+// ============================================================
+
+/*
+ * isValidWord: Kiem tra tu tieng Anh co hop le khong.
+ *
+ * Quy tac:
+ *   - Khong duoc rong hoac chi co khoang trang / Enter.
+ *   - Chi chua chu cai (a-z, A-Z) va dau cach (khoang trang don gian
+ *     giua cac tieng trong cum tu, vi du: "data structure").
+ *   - Khong cho phep: so (0-9), ky tu dac biet (!@#...), chuoi toan
+ *     khoang trang, hoac chuoi rong.
+ *
+ * Tra ve 1 neu hop le, 0 neu khong hop le.
+ */
+int isValidWord(const char* word) {
+    int hasLetter;
+    const char* p;
+
+    if (word == NULL) return 0;
+
+    /* Kiem tra chuoi rong hoac chi toan khoang trang / Enter */
+    hasLetter = 0;
+    p = word;
+    while (*p) {
+        if (*p != ' ' && *p != '\t' && *p != '\n' && *p != '\r') {
+            hasLetter = 1;
+            break;
+        }
+        p++;
+    }
+    if (!hasLetter) return 0;
+
+    /* Kiem tra tung ky tu: chi cho phep chu cai va khoang trang don gian */
+    p = word;
+    while (*p) {
+        if (!isalpha((unsigned char)*p) && *p != ' ') {
+            return 0;
+        }
+        p++;
+    }
+    return 1;
+}
+
+/*
+ * isValidMeaning: Kiem tra nghia tieng Viet co hop le khong.
+ *
+ * Quy tac:
+ *   - Khong duoc rong hoac chi co khoang trang / Enter.
+ *   - Co the chua bat ky ky tu nao (tieng Viet co dau, dau phay, v.v.)
+ *     NGOAI TRU: chuoi hoan toan rong hoac chuoi chi co whitespace.
+ *
+ * Tra ve 1 neu hop le, 0 neu khong hop le.
+ */
+int isValidMeaning(const char* meaning) {
+    const char* p;
+
+    if (meaning == NULL) return 0;
+
+    p = meaning;
+    while (*p) {
+        if (*p != ' ' && *p != '\t' && *p != '\n' && *p != '\r') {
+            return 1;
+        }
+        p++;
+    }
+    return 0;
+}
+
+// ============================================================
+//  HAM THEM TU MOI (co kiem tra trung va xac nhan ghi de)
+// ============================================================
+
+/*
+ * addWord: Them mot tu moi vao dau danh sach lien ket.
+ *
+ * Xu ly cac truong hop:
+ *   (A) Tu chua ton tai  -> them moi binh thuong, tra ve 0.
+ *   (B) Tu da ton tai    -> hien thi thong bao, hoi nguoi dung:
+ *                           - Chon 'y': goi updateMeaning() ghi de, tra ve 1.
+ *                           - Chon 'n': huy bo, tra ve 1.
+ *   (C) malloc that bai  -> tra ve -1.
+ *
+ * LUU Y: Ham nay KHONG tu validate du lieu dau vao. Caller (main.c)
+ * phai goi isValidWord() / isValidMeaning() truoc khi truyen vao day.
+ */
+int addWord(Node** head, char* english, char* vietnamese) {
+    /* Khai bao tat ca bien o dau ham - tuong thich C89 */
+    Node* temp;
+    Node* newNode;
+    char confirm;
+
+    /* --- Buoc 1: Kiem tra xem tu da ton tai chua --- */
+    temp = *head;
+    while (temp != NULL) {
+        if (strcasecmp(temp->word, english) == 0) {
+            /* Tu da ton tai -> hien thi canh bao */
+            setColor(14);
+            printf("\n\t[!] Tu '%s' da ton tai trong tu dien!\n", temp->word);
+            printf("\t    Nghia hien tai: '%s'\n", temp->meaning);
+            setColor(7);
+
+            /* Hoi nguoi dung co muon ghi de khong */
+            printf("\n\tBan co muon cap nhat nghia moi khong? (y/n): ");
+            /* Dung vong lap de dam bao nhan duoc 'y' hoac 'n' */
+            while (1) {
+                scanf(" %c", &confirm);
+                getchar(); /* Xoa '\n' con trong buffer */
+                confirm = (char)tolower((unsigned char)confirm);
+                if (confirm == 'y' || confirm == 'n') break;
+                setColor(12);
+                printf("\tVui long nhan 'y' hoac 'n': ");
+                setColor(7);
+            }
+
+            if (confirm == 'y') {
+                /* Goi ham cap nhat, no se in thong bao thanh cong */
+                updateMeaning(*head, english, vietnamese);
+            } else {
+                setColor(12);
+                printf("\t=> Da huy. Giu nguyen nghia cu cua '%s'.\n", english);
+                setColor(7);
+            }
+            return 1; /* Tu da ton tai (co hoac khong ghi de) */
+        }
+        temp = temp->next;
+    }
+
+    /* --- Buoc 2: Tu chua ton tai -> cap phat node moi --- */
+    newNode = (Node*)malloc(sizeof(Node));
+    if (newNode == NULL) {
+        setColor(12);
+        printf("\t[LOI] Khong du bo nho de them tu moi!\n");
+        setColor(7);
+        return -1; /* Loi cap phat bo nho */
+    }
+
     strcpy(newNode->word, english);
     strcpy(newNode->meaning, vietnamese);
-// them vao dau danh sach[cite: 1]
+    /* Them vao dau danh sach */
     newNode->next = *head;
     *head = newNode;
+    return 0; /* Them moi thanh cong */
 }
 
 // In tu dien ra man hinh[cite: 1]
@@ -301,18 +436,19 @@ int min3(int a, int b, int c) {
 int levenshtein(const char *s1, const char *s2) {
     int l1 = strlen(s1);
     int l2 = strlen(s2);
-    int matrix[100][100]; // Gioi han do dai tu 100 ky tu
+    int matrix[100][100]; /* Gioi han do dai tu 100 ky tu */
+    int i, j, cost;
 
-    for (int i = 0; i <= l1; i++) matrix[i][0] = i;
-    for (int j = 0; j <= l2; j++) matrix[0][j] = j;
+    for (i = 0; i <= l1; i++) matrix[i][0] = i;
+    for (j = 0; j <= l2; j++) matrix[0][j] = j;
 
-    for (int i = 1; i <= l1; i++) {
-        for (int j = 1; j <= l2; j++) {
-            int cost = (tolower(s1[i-1]) == tolower(s2[j-1])) ? 0 : 1;
+    for (i = 1; i <= l1; i++) {
+        for (j = 1; j <= l2; j++) {
+            cost = (tolower(s1[i-1]) == tolower(s2[j-1])) ? 0 : 1;
             matrix[i][j] = min3(
-                matrix[i-1][j] + 1,        // Xoa
-                matrix[i][j-1] + 1,        // Them
-                matrix[i-1][j-1] + cost    // Thay the
+                matrix[i-1][j] + 1,        /* Xoa */
+                matrix[i][j-1] + 1,        /* Them */
+                matrix[i-1][j-1] + cost    /* Thay the */
             );
         }
     }
@@ -600,11 +736,18 @@ void cleanHistory(const char* histFilename, Node* dictHead) {
     setColor(10);
     printf("\tDon dep hoan tat!\n");
 }
-// Hàm in lịch sử nâng cao: Tự động dọn rác và hiển thị từ mới nhất lên đầu
+// Ham in lich su nang cao: Tu dong don rac va hien thi tu moi nhat len dau
 void printHistory(const char* filename, Node* dictHead) {
-    // 1. Tự động gọi hàm dọn dẹp của bạn để lọc trùng và xóa "Khong tim thay" trước khi in
+    /* Khai bao bien o dau ham - tuong thich C89 */
+    char lines[2000][400];
+    int lineCount;
+    char buf[400];
+    int displayCount;
+    int i;
+
+    /* 1. Tu dong goi ham don dep truoc khi in */
     cleanHistory(filename, dictHead);
-    
+
     clearScreen();
     boxHeader("LICH SU TRA CUU (MOI NHAT LEN DAU)");
 
@@ -618,14 +761,10 @@ void printHistory(const char* filename, Node* dictHead) {
         return;
     }
 
-    // Mảng tạm để lưu các dòng từ file nhằm mục đích in ngược
-    char lines[2000][400];
-    int lineCount = 0;
-    char buf[400];
-
-    // 2. Đọc toàn bộ dữ liệu đã sạch vào mảng RAM
+    /* 2. Doc toan bo du lieu vao mang RAM */
+    lineCount = 0;
     while (fgets(buf, sizeof(buf), f) && lineCount < 2000) {
-        buf[strcspn(buf, "\n")] = 0; // Xóa ký tự xuống dòng
+        buf[strcspn(buf, "\n")] = 0;
         if (strlen(buf) > 0) {
             strcpy(lines[lineCount++], buf);
         }
@@ -641,24 +780,28 @@ void printHistory(const char* filename, Node* dictHead) {
         return;
     }
 
-    // In tiêu đề bảng lịch sử
-    setColor(10); // Màu xanh lá
-    printf("\t%-3s | %-18s | %-20s | %-20s | %s\n", "STT", "TU DA TRA", "KET QUA", "THOI GIAN TRA", "SO LAN");
+    /* In tieu de bang lich su */
+    setColor(10);
+    printf("\t%-3s | %-18s | %-20s | %-20s | %s\n",
+           "STT", "TU DA TRA", "KET QUA", "THOI GIAN TRA", "SO LAN");
     printf("\t-------------------------------------------------------------------------------------\n");
     setColor(7);
 
-    int displayCount = 1;
-    
-    // 3. Vòng lặp in ngược: Duyệt từ cuối mảng lên đầu mảng (Từ mới tra luôn ở dưới cùng file -> đưa lên đầu)
-    for (int i = lineCount - 1; i >= 0; i--) {
+    displayCount = 1;
+
+    /* 3. Vong lap in nguoc: tu moi nhat o cuoi file -> hien thi len dau */
+    for (i = lineCount - 1; i >= 0; i--) {
         char temp[400];
+        char* kw;
+        char* res;
+        char* ts;
+        char* hitStr;
         strcpy(temp, lines[i]);
 
-        // Bóc tách dữ liệu theo định dạng chuỗi của bạn
-        char* kw     = strtok(temp, "|");
-        char* res    = strtok(NULL, "|");
-        char* ts     = strtok(NULL, "|");
-        char* hitStr = strtok(NULL, "|");
+        kw     = strtok(temp, "|");
+        res    = strtok(NULL, "|");
+        ts     = strtok(NULL, "|");
+        hitStr = strtok(NULL, "|");
 
         if (kw && res && ts && hitStr) {
             printf("\t%3d | %-18s | %-20s | %-20s | x%s\n",

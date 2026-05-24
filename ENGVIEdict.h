@@ -24,8 +24,19 @@ void slowPrint(char* str, int delay);
 void boxHeader(char* title);
 void clearScreen();
 
-// Ham tao node moi[cite: 2]
-void addWord(Node** head, char* tuAnh, char* nghiaViet);
+// Kiem tra tu tieng Anh hop le (chi chua chu cai va khoang trang giua tu)
+// Tra ve 1 neu hop le, 0 neu khong hop le
+int isValidWord(const char* word);
+
+// Kiem tra nghia tieng Viet hop le (khong duoc rong hoac chi co khoang trang)
+// Tra ve 1 neu hop le, 0 neu khong hop le
+int isValidMeaning(const char* meaning);
+
+// Ham tao node moi
+// Tra ve:  0 = them thanh cong
+//          1 = tu da ton tai (da goi updateMeaning neu nguoi dung dong y)
+//         -1 = loi cap phat bo nho
+int addWord(Node** head, char* tuAnh, char* nghiaViet);
 // In ra toan bo tu dien[cite: 2]
 void dictionaryPrinting(Node* head);
 // Tim kiem tu trong tu dien[cite: 2]
