@@ -2,7 +2,7 @@
 #define GEMINI_H
 
 // Thay bang API key that cua ban
-#define GEMINI_API_KEY "YOUR_API_KEY_HERE"
+#define GEMINI_API_KEY "AIzaSyDdYAEh0y4i5nu8VXwdShh5KBYRXvWr7ns"
 
 // Cach noi chuoi dung trong C: De 2 chuoi canh nhau hoac goi ten Macro
 #define GEMINI_URL "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=" GEMINI_API_KEY
@@ -26,5 +26,8 @@ void suggestRelatedWords(const char* englishWord);
 
 // 3. Quiz thong minh dua tren lich su tra cuu
 void smartQuizFromHistory(const char* histFilename);
+
+// 4. Hien thi phat am IPA cua tu tieng Anh
+void showIPAPronunciation(const char* englishWord);
 
 #endif

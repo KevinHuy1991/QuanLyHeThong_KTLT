@@ -257,3 +257,75 @@ void smartQuizFromHistory(const char* histFilename) {
         SetConsoleOutputCP(oldCP);
     }
 }
+// === TINH NANG 4: PHAT AM IPA ===
+void showIPAPronunciation(const char* englishWord) {
+    UINT oldCP = GetConsoleOutputCP();
+    SetConsoleOutputCP(65001); // UTF-8 de hien thi ky tu IPA
+
+    setColor(11);
+    printf("\n\t[AI] Dang tra phat am IPA...\n");
+    setColor(7);
+
+    char prompt[512];
+    snprintf(prompt, sizeof(prompt),
+        "Give the IPA pronunciation of the English word '%s'. "
+        "Format your response EXACTLY like this example (no extra text):\n"
+        "WORD: hello\n"
+        "IPA (US): /h@'loU/\n"
+        "IPA (UK): /h@'l@U/\n"
+        "SYLLABLES: hel-lo\n"
+        "STRESS: Second syllable\n"
+        "TIPS: [one short Vietnamese tip on how to pronounce it]\n"
+        "Use actual IPA Unicode characters in the IPA lines. Plain text only, no markdown.",
+        englishWord);
+
+    char* result = callGeminiAPI(prompt);
+    if (result) {
+        setColor(14);
+        printf("\n\t+======================================+\n");
+        printf("\t|  PHAT AM IPA: %-22s|\n", englishWord);
+        printf("\t+======================================+\n");
+        setColor(7);
+
+        char* line = strtok(result, "\n");
+        while (line != NULL) {
+            /* Loai bo ky tu \r neu co */
+            int len = strlen(line);
+            if (len > 0 && line[len-1] == '\r') line[len-1] = '\0';
+
+            if (strncmp(line, "WORD:", 5) == 0) {
+                /* Bo qua dong WORD vi da hien thi o header */
+            } else if (strncmp(line, "IPA (US):", 9) == 0) {
+                setColor(10);
+                printf("\t  My (US)    : %s\n", line + 9);
+                setColor(7);
+            } else if (strncmp(line, "IPA (UK):", 9) == 0) {
+                setColor(9);
+                printf("\t  Anh (UK)   : %s\n", line + 9);
+                setColor(7);
+            } else if (strncmp(line, "SYLLABLES:", 10) == 0) {
+                setColor(14);
+                printf("\t  Am tiet    : %s\n", line + 10);
+                setColor(7);
+            } else if (strncmp(line, "STRESS:", 7) == 0) {
+                setColor(13);
+                printf("\t  Trong am   : %s\n", line + 7);
+                setColor(7);
+            } else if (strncmp(line, "TIPS:", 5) == 0) {
+                setColor(11);
+                printf("\t  Meo phat am: %s\n", line + 5);
+                setColor(7);
+            } else if (strlen(line) > 1) {
+                printf("\t  %s\n", line);
+            }
+            line = strtok(NULL, "\n");
+        }
+        printf("\n");
+        free(result);
+    } else {
+        setColor(12);
+        printf("\t[LOI] Khong the ket noi API. Kiem tra internet hoac API key.\n");
+        setColor(7);
+    }
+    SetConsoleOutputCP(oldCP);
+}

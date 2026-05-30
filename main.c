@@ -28,16 +28,14 @@ int main() {
         
         setColor(14); printf("\t1. "); setColor(7); printf("Tra cuu tu vung\n");
         setColor(14); printf("\t2. "); setColor(7); printf("Them tu moi \n");
-        setColor(14); printf("\t3. "); setColor(7); printf("In toan bo tu dien\n");
-        setColor(14); printf("\t4. "); setColor(7); printf("Thay doi nghia cua tu\n");
-        setColor(14); printf("\t5. "); setColor(7); printf("Xoa tu khoi he thong\n");
-        setColor(14); printf("\t6. "); setColor(7); printf("Liet ke tu theo chu cai dau\n");
-        setColor(14); printf("\t7. "); setColor(7); printf("Xem lich su tra cuu\n");
-        setColor(14); printf("\t8. "); setColor(7); printf("On tap tu vung (Mini Game)\n");
+        setColor(14); printf("\t3. "); setColor(7); printf("Cai thien nghia cua tu\n");
+        setColor(14); printf("\t4. "); setColor(7); printf("Xoa tu khoi he thong\n");
+        setColor(14); printf("\t5. "); setColor(7); printf("Xem lich su tra cuu\n");
+        setColor(14); printf("\t6. "); setColor(7); printf("On tap tu vung (Mini Game)\n");
         setColor(12); printf("\t0. "); setColor(7); printf("Luu du lieu va Thoat\n");
         
         printf("\t-------------------------------\n");
-        printf("\tLua chon cua ban(0-8): ");
+        printf("\tLua chon cua ban(0-6): ");
         if (scanf("%d", &choice) != 1) {
             choice = -1;
             while(getchar() != '\n');
@@ -49,9 +47,12 @@ int main() {
                 printf("\tNhap tu tieng Anh can tim: ");
                 fgets(english, sizeof(english), stdin);
                 removeNewline(english);
-
-                advancedWordSearch(dictionary, english);
-
+                int wordcount = strlen(english);
+                if(wordcount == 1){
+                    searchByFirstChar(dictionary, english[0]);
+                }
+                else{
+                    advancedWordSearch(dictionary, english);
                 {
                     Node* found = dictionary;
                     int isFound = 0; // Cờ kiểm tra
@@ -71,19 +72,41 @@ int main() {
                     if (isFound) {
                         saveSearchHistory(english, histResult, historyFile);
                         
-                        printf("\n\tBan co muon xem chi tiet tu AI? (1=Co / 0=Khong): ");
+                        // --- MENU AI ---
                         int aiChoice;
-                        scanf("%d", &aiChoice);
-                        getchar();
-                        if (aiChoice == 1) {
-                            explainWord(english, histResult);    // Giai thich chi tiet
-                            suggestRelatedWords(english);        // Goi y tu lien quan
-                        }
+                        do {
+                            setColor(14);
+                            printf("\n\t=== TINH NANG AI ===\n");
+                            setColor(7);
+                            printf("\t1. Xem chi tiet tu (AI giai thich)\n");
+                            printf("\t2. Goi y tu lien quan\n");
+                            printf("\t3. Phat am IPA\n");
+                            printf("\t0. Quay lai menu chinh\n");
+                            printf("\tLua chon (0-3): ");
+                            if (scanf("%d", &aiChoice) != 1) {
+                                aiChoice = -1;
+                                while(getchar() != '\n');
+                            }
+                            getchar();
+                            if (aiChoice == 1) {
+                                explainWord(english, histResult);
+                            } else if (aiChoice == 2) {
+                                suggestRelatedWords(english);
+                            } else if (aiChoice == 3) {
+                                showIPAPronunciation(english);
+                            } else if (aiChoice != 0) {
+                                setColor(12);
+                                printf("\tLua chon khong hop le!\n");
+                                setColor(7);
+                            }
+                        } while (aiChoice != 0);
                     }
                 }
+            }
 
                 printf("\n\tBam phim bat ky de quay lai menu...");
                 getch();
+                clearScreen();
                 break;
 
             case 2: {
@@ -201,16 +224,11 @@ int main() {
 
                 printf("\n\tBam phim bat ky de quay lai menu...");
                 getch();
+                clearScreen();
                 break;
             }
 
-            case 3: 
-                dictionaryPrinting(dictionary);
-                printf("\n\tBam phim bat ky de quay lai menu...");
-                getch(); 
-                break;
-
-            case 4: {
+            case 3: {
                 /* Khai bao bien o dau block - tuong thich C89 */
                 int inputOK;
                 int attempts;
@@ -276,6 +294,7 @@ int main() {
                     setColor(7);
                     printf("\n\tBam phim bat ky de quay lai menu...");
                     getch();
+                    clearScreen();
                     break;
                 }
 
@@ -314,10 +333,11 @@ int main() {
                 updateMeaning(dictionary, english, vietnamese);
                 printf("\n\tBam phim bat ky de quay lai menu...");
                 getch();
+                clearScreen();
                 break;
             }
 
-            case 5: 
+            case 4: 
                 printf("\tNhap tu tieng Anh can xoa: ");
                 fgets(english, sizeof(english), stdin);
                 removeNewline(english);
@@ -330,22 +350,15 @@ int main() {
                 
                 printf("\n\tBam phim bat ky de quay lai menu...");
                 getch(); 
+                clearScreen();
                 break;
 
-            case 6:
-                printf("\tNhap chu cai dau: ");
-                char ch;
-                scanf("%c", &ch);
-                searchByFirstChar(dictionary, ch);
-                printf("\n\tBam phim bat ky de quay lai menu...");
-                getch(); 
-                break;
-            
-            case 7:
+            case 5:
                 printHistory(historyFile, dictionary); 
+                clearScreen();
                 break;
             
-            case 8:
+            case 6:
                 {
                     int quizChoice;
                     do {
