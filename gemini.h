@@ -2,7 +2,7 @@
 #define GEMINI_H
 
 // Thay bang API key that cua ban
-#define GEMINI_API_KEY "AIzaSyDdYAEh0y4i5nu8VXwdShh5KBYRXvWr7ns"
+#define GEMINI_API_KEY "YOUR_API_KEY_HERE"
 
 // Cach noi chuoi dung trong C: De 2 chuoi canh nhau hoac goi ten Macro
 #define GEMINI_URL "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=" GEMINI_API_KEY
