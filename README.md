@@ -33,8 +33,10 @@ Dự án được thực hiện bởi nhóm 4 thành viên, chia thành 2 nhóm 
 ### **Nhóm 1: Giao diện & Điều khiển (main.c)**
 *   **Nguyễn Thị Ngọc Đẹp:**
     *   Thiết kế menu lựa chọn và cấu trúc vòng lặp điều hướng.
+    *   Viết hàm `showIPAPronunciation`: Tra cứu phát âm IPA.
 *   **Nguyễn Thanh Huy:**
     *   Xử lý logic `switch-case` và kết nối các hàm logic vào giao diện người dùng.
+    *   Tham gia viết hàm `showIPAPronunciation` và thiết lập rẽ nhánh cho các chức năng AI.
     *   Xử lý bộ nhớ đệm (buffer) để tránh lỗi nhập liệu.
 
 ---
